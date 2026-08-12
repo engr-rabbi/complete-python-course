@@ -27,7 +27,7 @@
 <header class="topbar">
   <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
   <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
-  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../about/">About</a></nav>
   <div class="topbar-spacer"></div>
   <div id="search-box" role="search">
     <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
@@ -42,7 +42,6 @@
     <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
     <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
   </div>
-  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
   <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
   
 <details class="side-module">
@@ -147,7 +146,7 @@ code) and loops (decide <em>how many times</em> to run some code).</p>
 list. A <code>while</code> loop is used when you want to repeat "until some condition changes," which might
 happen an unpredictable number of times — like re-prompting a user until they type valid input.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-19975"><code><span class="kw">if</span> condition:
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-21495"><code><span class="kw">if</span> condition:
     ...
 <span class="kw">elif</span> other_condition:
     ...
@@ -161,7 +160,7 @@ happen an unpredictable number of times — like re-prompting a user until they 
     ...</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>if / elif / else <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">if / elif / else</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-59034"><code>age = <span class="num">20</span>
+  <h3>if / elif / else <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">if / elif / else</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55666"><code>age = <span class="num">20</span>
 <span class="kw">if</span> age &lt; <span class="num">13</span>:
     <span class="kw">print</span>(<span class="str">&quot;Child&quot;</span>)
 <span class="kw">elif</span> age &lt; <span class="num">20</span>:
@@ -173,7 +172,7 @@ if age &lt; 13:
 elif age &lt; 20:
     print(&quot;Teenager&quot;)
 else:
-    print(&quot;Adult&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Python checks each condition top to bottom and runs the first block whose condition is True, then skips the rest.</p><h3>Combining conditions <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Combining conditions</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-88472"><code>age = <span class="num">25</span>
+    print(&quot;Adult&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Python checks each condition top to bottom and runs the first block whose condition is True, then skips the rest.</p><h3>Combining conditions <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Combining conditions</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-97553"><code>age = <span class="num">25</span>
 has_id = <span class="kw">True</span>
 <span class="kw">if</span> age &gt;= <span class="num">18</span> <span class="kw">and</span> has_id:
     <span class="kw">print</span>(<span class="str">&quot;Entry allowed&quot;</span>)
@@ -183,7 +182,7 @@ has_id = True
 if age &gt;= 18 and has_id:
     print(&quot;Entry allowed&quot;)
 else:
-    print(&quot;Entry denied&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p><code>and</code> requires both sides to be True; <code>or</code> needs only one; <code>not</code> flips a boolean.</p><h3>while loop with a running total <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">while loop with a running total</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93026"><code>total = <span class="num">0</span>
+    print(&quot;Entry denied&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p><code>and</code> requires both sides to be True; <code>or</code> needs only one; <code>not</code> flips a boolean.</p><h3>while loop with a running total <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">while loop with a running total</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-66381"><code>total = <span class="num">0</span>
 n = <span class="num">1</span>
 <span class="kw">while</span> n &lt;= <span class="num">5</span>:
     total = total + n
@@ -193,11 +192,11 @@ n = 1
 while n &lt;= 5:
     total = total + n
     n = n + 1
-print(total)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The loop keeps running as long as n <= 5 stays True. Each pass adds n to total, then increases n — this is how you sum 1+2+3+4+5.</p><h3>for loop over a string <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">for loop over a string</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-56043"><code><span class="kw">for</span> letter <span class="kw">in</span> <span class="str">&quot;Py!&quot;</span>:
+print(total)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The loop keeps running as long as n <= 5 stays True. Each pass adds n to total, then increases n — this is how you sum 1+2+3+4+5.</p><h3>for loop over a string <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">for loop over a string</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-3680"><code><span class="kw">for</span> letter <span class="kw">in</span> <span class="str">&quot;Py!&quot;</span>:
     <span class="kw">print</span>(letter)</code></pre><div class="cb-output"><span class="out-label">Output</span>P
 y
 !</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">for letter in &quot;Py!&quot;:
-    print(letter)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A for loop can iterate directly over any sequence — including a string, character by character.</p><h3>break and continue <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">break and continue</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-61891"><code><span class="kw">for</span> number <span class="kw">in</span> range(<span class="num">10</span>):
+    print(letter)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A for loop can iterate directly over any sequence — including a string, character by character.</p><h3>break and continue <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">break and continue</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-60287"><code><span class="kw">for</span> number <span class="kw">in</span> range(<span class="num">10</span>):
     <span class="kw">if</span> number == <span class="num">7</span>:
         <span class="kw">break</span>
     <span class="kw">if</span> number % <span class="num">2</span> != <span class="num">0</span>:
@@ -262,14 +261,14 @@ y
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises the program hangs forever (must be force-stopped)</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75567"><code>n = <span class="num">1</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises the program hangs forever (must be force-stopped)</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-63841"><code>n = <span class="num">1</span>
 <span class="kw">while</span> n &lt;= <span class="num">5</span>:
     <span class="kw">print</span>(n)
     <span class="cm"># forgot n = n + 1</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-38397"><code>n = <span class="num">1</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-9861"><code>n = <span class="num">1</span>
 <span class="kw">while</span> n &lt;= <span class="num">5</span>:
     <span class="kw">print</span>(n)
     n = n + <span class="num">1</span></code></pre></div>
@@ -282,13 +281,13 @@ y
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError: invalid syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68528"><code>age = <span class="num">18</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError: invalid syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-7657"><code>age = <span class="num">18</span>
 <span class="kw">if</span> age = <span class="num">18</span>:
     <span class="kw">print</span>(<span class="str">&quot;Just became an adult&quot;</span>)</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-73371"><code>age = <span class="num">18</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-98988"><code>age = <span class="num">18</span>
 <span class="kw">if</span> age == <span class="num">18</span>:
     <span class="kw">print</span>(<span class="str">&quot;Just became an adult&quot;</span>)</code></pre></div>
     </div>
@@ -301,7 +300,7 @@ y
   
 <div class="exercise-box" data-answer="==" data-explain="= assigns a value; == compares two values. Conditions always need ==.">
   <p><strong>Exercise 1 — Debug this code</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-27689"><code><span class="kw">for</span> n <span class="kw">in</span> range(<span class="num">9</span>):
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-47059"><code><span class="kw">for</span> n <span class="kw">in</span> range(<span class="num">9</span>):
     <span class="kw">if</span> n % <span class="num">2</span> = <span class="num">0</span>:
         <span class="kw">print</span>(n)</code></pre></div>
   <p>This code should print all even numbers from 0 to 8, but it has a bug. What single character needs to change?</p>
@@ -321,7 +320,7 @@ y
   <p>Write a program using a while loop that keeps asking the user to &#x27;Enter a number greater than 10&#x27; until they succeed, then prints &#x27;Thanks!&#x27;.</p>
   <ul><li>Use a while loop with a condition that starts False</li><li>Convert input() to int() before comparing</li><li>Print &#x27;Thanks!&#x27; once the loop ends</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>Initialize a variable to something that&#x27;s guaranteed to fail the check the first time, e.g. number = 0.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55724"><code>number = <span class="num">0</span>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-77387"><code>number = <span class="num">0</span>
 <span class="kw">while</span> number &lt;= <span class="num">10</span>:
     number = int(input(<span class="str">&quot;Enter a number greater than 10: &quot;</span>))
 <span class="kw">print</span>(<span class="str">&quot;Thanks!&quot;</span>)</code></pre></div></div></details>

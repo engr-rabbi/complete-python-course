@@ -27,7 +27,7 @@
 <header class="topbar">
   <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
   <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
-  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../about/">About</a></nav>
   <div class="topbar-spacer"></div>
   <div id="search-box" role="search">
     <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
@@ -42,7 +42,6 @@
     <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
     <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
   </div>
-  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
   <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
   
 <details class="side-module">
@@ -148,7 +147,7 @@ own private memory around with it.</p>
 that usually calls the original — plus does something extra before or after. The <code>@decorator</code> syntax
 above a function definition is just a shortcut for <code>my_function = decorator(my_function)</code>.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-52252"><code><span class="kw">def</span> decorator(func):
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-19756"><code><span class="kw">def</span> decorator(func):
     <span class="kw">def</span> wrapper(*args, **kwargs):
         <span class="cm"># do something before</span>
         result = func(*args, **kwargs)
@@ -161,7 +160,7 @@ above a function definition is just a shortcut for <code>my_function = decorator
     ...</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>A function returning a function <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A function returning a function</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-51158"><code><span class="kw">def</span> make_multiplier(factor):
+  <h3>A function returning a function <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A function returning a function</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90605"><code><span class="kw">def</span> make_multiplier(factor):
     <span class="kw">def</span> multiply(number):
         <span class="kw">return</span> number * factor
     <span class="kw">return</span> multiply
@@ -173,7 +172,7 @@ times3 = make_multiplier(<span class="num">3</span>)
     return multiply
 
 times3 = make_multiplier(3)
-print(times3(10))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>make_multiplier(3) returns a brand-new function, multiply, that has 'remembered' factor = 3 — that's the closure.</p><h3>A closure keeping private state <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A closure keeping private state</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-59275"><code><span class="kw">def</span> make_counter():
+print(times3(10))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>make_multiplier(3) returns a brand-new function, multiply, that has 'remembered' factor = 3 — that's the closure.</p><h3>A closure keeping private state <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A closure keeping private state</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94909"><code><span class="kw">def</span> make_counter():
     count = <span class="num">0</span>
     <span class="kw">def</span> counter():
         <span class="kw">nonlocal</span> count
@@ -197,7 +196,7 @@ count_up = make_counter()
 count_up = make_counter()
 print(count_up())
 print(count_up())
-print(count_up())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>count lives inside make_counter's scope, but counter() keeps a private, persistent reference to it via nonlocal — each call remembers the last.</p><h3>Your first decorator <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first decorator</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-99050"><code><span class="kw">def</span> announce(func):
+print(count_up())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>count lives inside make_counter's scope, but counter() keeps a private, persistent reference to it via nonlocal — each call remembers the last.</p><h3>Your first decorator <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first decorator</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16745"><code><span class="kw">def</span> announce(func):
     <span class="kw">def</span> wrapper():
         <span class="kw">print</span>(<span class="str">&quot;Starting...&quot;</span>)
         func()
@@ -221,7 +220,7 @@ Done!</div><div data-runner class="runner"><textarea class="run-editor" spellche
 def say_hi():
     print(&quot;Hi!&quot;)
 
-say_hi()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>@announce is shorthand for say_hi = announce(say_hi). Calling say_hi() now actually runs wrapper(), which adds behavior before and after the original function.</p><h3>A decorator that accepts arguments <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A decorator that accepts arguments</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-63198"><code><span class="kw">def</span> announce(func):
+say_hi()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>@announce is shorthand for say_hi = announce(say_hi). Calling say_hi() now actually runs wrapper(), which adds behavior before and after the original function.</p><h3>A decorator that accepts arguments <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A decorator that accepts arguments</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-360"><code><span class="kw">def</span> announce(func):
     <span class="kw">def</span> wrapper(*args, **kwargs):
         <span class="kw">print</span>(<span class="str">&quot;Starting...&quot;</span>)
         result = func(*args, **kwargs)
@@ -266,7 +265,7 @@ print(add(2, 3))</textarea><div class="tracer-controls"><button class="btn btn-p
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints None instead of 5</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-7093"><code><span class="kw">def</span> announce(func):
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints None instead of 5</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-61929"><code><span class="kw">def</span> announce(func):
     <span class="kw">def</span> wrapper(*args, **kwargs):
         func(*args, **kwargs)  <span class="cm"># result is thrown away!</span>
     <span class="kw">return</span> wrapper
@@ -279,7 +278,7 @@ print(add(2, 3))</textarea><div class="tracer-controls"><button class="btn btn-p
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62669"><code><span class="kw">def</span> announce(func):
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-13519"><code><span class="kw">def</span> announce(func):
     <span class="kw">def</span> wrapper(*args, **kwargs):
         <span class="kw">return</span> func(*args, **kwargs)
     <span class="kw">return</span> wrapper</code></pre></div>
@@ -293,7 +292,7 @@ print(add(2, 3))</textarea><div class="tracer-controls"><button class="btn btn-p
   
 <div class="exercise-box" data-answer="HI" data-explain="inner remembers message = &#x27;hi&#x27; from its enclosing scope, and .upper() converts it to &#x27;HI&#x27;.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-82041"><code><span class="kw">def</span> outer():
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-35000"><code><span class="kw">def</span> outer():
     message = <span class="str">&quot;hi&quot;</span>
     <span class="kw">def</span> inner():
         <span class="kw">return</span> message.upper()
@@ -318,7 +317,7 @@ fn = outer()
   <p>Write a decorator called timer_label that prints &#x27;[LOG] Running &lt;function name&gt;&#x27; before calling the wrapped function, then apply it to a simple function.</p>
   <ul><li>Use *args/**kwargs so it works on any function</li><li>Print the function&#x27;s name using func.__name__</li><li>Return the original function&#x27;s result</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>Every function object has a __name__ attribute.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-6316"><code><span class="kw">def</span> timer_label(func):
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16175"><code><span class="kw">def</span> timer_label(func):
     <span class="kw">def</span> wrapper(*args, **kwargs):
         <span class="kw">print</span>(f<span class="str">&quot;[LOG] Running {func.__name__}&quot;</span>)
         <span class="kw">return</span> func(*args, **kwargs)

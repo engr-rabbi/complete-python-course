@@ -27,7 +27,7 @@
 <header class="topbar">
   <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
   <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
-  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../about/">About</a></nav>
   <div class="topbar-spacer"></div>
   <div id="search-box" role="search">
     <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
@@ -42,7 +42,6 @@
     <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
     <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
   </div>
-  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
   <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
   
 <details class="side-module">
@@ -146,18 +145,18 @@ directories. <code>shutil</code> adds higher-level file operations like copying 
 <p><code>pathlib</code> is the modern, recommended approach: it represents a file path as an object (not just a
 string), which makes path-building far less error-prone across operating systems.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90037"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62939"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
 p = Path(<span class="str">&quot;data&quot;</span>) / <span class="str">&quot;scores.csv&quot;</span>
 p.exists()
 p.parent
 os.listdir(<span class="str">&quot;.&quot;</span>)</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Building a path with pathlib <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Building a path with pathlib</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-60366"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
+  <h3>Building a path with pathlib <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Building a path with pathlib</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-89633"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
 data_file = Path(<span class="str">&quot;data&quot;</span>) / <span class="str">&quot;scores.csv&quot;</span>
 <span class="kw">print</span>(data_file)</code></pre><div class="cb-output"><span class="out-label">Output</span>data/scores.csv</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">from pathlib import Path
 data_file = Path(&quot;data&quot;) / &quot;scores.csv&quot;
-print(data_file)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The / operator joins path pieces correctly for the current operating system — no manual slash or backslash handling needed.</p><h3>Checking existence and listing a folder <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Checking existence and listing a folder</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-48955"><code><span class="kw">import</span> os
+print(data_file)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The / operator joins path pieces correctly for the current operating system — no manual slash or backslash handling needed.</p><h3>Checking existence and listing a folder <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Checking existence and listing a folder</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93900"><code><span class="kw">import</span> os
 <span class="kw">from</span> pathlib <span class="kw">import</span> Path
 <span class="kw">print</span>(Path(<span class="str">&quot;data&quot;</span>).exists())
 <span class="kw">for</span> name <span class="kw">in</span> os.listdir(<span class="str">&quot;.&quot;</span>):
@@ -166,9 +165,9 @@ print(data_file)</textarea><div class="tracer-controls"><button class="btn btn-p
 from pathlib import Path
 print(Path(&quot;data&quot;).exists())
 for name in os.listdir(&quot;.&quot;):
-    print(name)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>exists() checks whether a path is actually there; os.listdir(path) lists everything inside a folder.</p><h3>Creating folders <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Creating folders</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-49577"><code><span class="kw">import</span> os
+    print(name)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>exists() checks whether a path is actually there; os.listdir(path) lists everything inside a folder.</p><h3>Creating folders <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Creating folders</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-20888"><code><span class="kw">import</span> os
 os.makedirs(<span class="str">&quot;reports/2026&quot;</span>, exist_ok=<span class="kw">True</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>(creates reports/2026, including reports if needed — no error if it already exists)</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">import os
-os.makedirs(&quot;reports/2026&quot;, exist_ok=True)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>makedirs() creates every missing folder in the path; exist_ok=True stops it from raising an error if the folder is already there.</p><h3>Copying and moving files <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Copying and moving files</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-11416"><code><span class="kw">import</span> shutil
+os.makedirs(&quot;reports/2026&quot;, exist_ok=True)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>makedirs() creates every missing folder in the path; exist_ok=True stops it from raising an error if the folder is already there.</p><h3>Copying and moving files <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Copying and moving files</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-83028"><code><span class="kw">import</span> shutil
 shutil.copy(<span class="str">&quot;notes.txt&quot;</span>, <span class="str">&quot;backup_notes.txt&quot;</span>)
 shutil.move(<span class="str">&quot;backup_notes.txt&quot;</span>, <span class="str">&quot;archive/backup_notes.txt&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>(copies then moves the file — no console output)</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">import shutil
 shutil.copy(&quot;notes.txt&quot;, &quot;backup_notes.txt&quot;)
@@ -191,12 +190,12 @@ shutil.move(&quot;backup_notes.txt&quot;, &quot;archive/backup_notes.txt&quot;)<
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but data loss if this was a mistake</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2980"><code><span class="kw">import</span> os
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but data loss if this was a mistake</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-58372"><code><span class="kw">import</span> os
 os.remove(<span class="str">&quot;important_report.txt&quot;</span>)  <span class="cm"># gone immediately, no confirmation</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-32009"><code><span class="kw">import</span> os
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-46348"><code><span class="kw">import</span> os
 <span class="kw">if</span> os.path.exists(<span class="str">&quot;important_report.txt&quot;</span>):
     confirm = input(<span class="str">&quot;Really delete important_report.txt? (yes/no) &quot;</span>)
     <span class="kw">if</span> confirm == <span class="str">&quot;yes&quot;</span>:
@@ -211,7 +210,7 @@ os.remove(<span class="str">&quot;important_report.txt&quot;</span>)  <span clas
   
 <div class="exercise-box" data-answer=".png" data-explain="Path objects expose useful properties like .suffix (extension), .name, and .parent.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-67618"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-41178"><code><span class="kw">from</span> pathlib <span class="kw">import</span> Path
 p = Path(<span class="str">&quot;images&quot;</span>) / <span class="str">&quot;cat.png&quot;</span>
 <span class="kw">print</span>(p.suffix)</code></pre></div>
   <p>What does this print?</p>
@@ -231,7 +230,7 @@ p = Path(<span class="str">&quot;images&quot;</span>) / <span class="str">&quot;
   <p>Write a script that creates a folder called &#x27;archive&#x27; if it doesn&#x27;t exist, then lists every file in the current directory that ends with &#x27;.txt&#x27;.</p>
   <ul><li>Use os.makedirs with exist_ok=True</li><li>Use os.listdir() and check each name with .endswith(&#x27;.txt&#x27;)</li><li>Print each matching filename</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>&quot;report.txt&quot;.endswith(&quot;.txt&quot;) is True.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-8164"><code><span class="kw">import</span> os
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-97626"><code><span class="kw">import</span> os
 os.makedirs(<span class="str">&quot;archive&quot;</span>, exist_ok=<span class="kw">True</span>)
 <span class="kw">for</span> name <span class="kw">in</span> os.listdir(<span class="str">&quot;.&quot;</span>):
     <span class="kw">if</span> name.endswith(<span class="str">&quot;.txt&quot;</span>):

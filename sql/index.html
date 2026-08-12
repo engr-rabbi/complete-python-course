@@ -27,7 +27,7 @@
 <header class="topbar">
   <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
   <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
-  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../about/">About</a></nav>
   <div class="topbar-spacer"></div>
   <div id="search-box" role="search">
     <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
@@ -42,7 +42,6 @@
     <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
     <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
   </div>
-  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
   <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
   
 <details class="side-module">
@@ -146,7 +145,7 @@ language used to talk to relational databases. <strong>SQLite</strong> is a ligh
 engine built into Python's standard library via the <code>sqlite3</code> module — no separate server required,
 which makes it perfect for learning and for small applications.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-71799"><code><span class="kw">import</span> sqlite3
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68757"><code><span class="kw">import</span> sqlite3
 conn = sqlite3.connect(<span class="str">&quot;app.db&quot;</span>)
 cursor = conn.cursor()
 cursor.execute(<span class="str">&quot;SELECT * FROM students WHERE grade &gt; ?&quot;</span>, (<span class="num">80</span>,))
@@ -154,7 +153,7 @@ conn.commit()
 conn.close()</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Connecting and creating a table <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Connecting and creating a table</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-56644"><code><span class="kw">import</span> sqlite3
+  <h3>Connecting and creating a table <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Connecting and creating a table</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-34789"><code><span class="kw">import</span> sqlite3
 &nbsp;
 conn = sqlite3.connect(<span class="str">&quot;school.db&quot;</span>)
 cursor = conn.cursor()
@@ -178,7 +177,7 @@ cursor.execute(&quot;&quot;&quot;
     )
 &quot;&quot;&quot;)
 conn.commit()
-conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>connect() opens (or creates) the database file. IF NOT EXISTS prevents an error if the table is already there. commit() saves the change to disk.</p><h3>Inserting records safely <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Inserting records safely</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-33485"><code><span class="kw">import</span> sqlite3
+conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>connect() opens (or creates) the database file. IF NOT EXISTS prevents an error if the table is already there. commit() saves the change to disk.</p><h3>Inserting records safely <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Inserting records safely</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-96759"><code><span class="kw">import</span> sqlite3
 &nbsp;
 conn = sqlite3.connect(<span class="str">&quot;school.db&quot;</span>)
 cursor = conn.cursor()
@@ -190,7 +189,7 @@ conn = sqlite3.connect(&quot;school.db&quot;)
 cursor = conn.cursor()
 cursor.execute(&quot;INSERT INTO students (name, grade) VALUES (?, ?)&quot;, (&quot;Ada&quot;, 92))
 conn.commit()
-conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The ? placeholders are filled in safely from the tuple — always do this instead of building SQL strings with +, which opens the door to SQL injection bugs.</p><h3>Selecting with WHERE and ORDER BY <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Selecting with WHERE and ORDER BY</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15221"><code><span class="kw">import</span> sqlite3
+conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The ? placeholders are filled in safely from the tuple — always do this instead of building SQL strings with +, which opens the door to SQL injection bugs.</p><h3>Selecting with WHERE and ORDER BY <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Selecting with WHERE and ORDER BY</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-12438"><code><span class="kw">import</span> sqlite3
 &nbsp;
 conn = sqlite3.connect(<span class="str">&quot;school.db&quot;</span>)
 cursor = conn.cursor()
@@ -204,7 +203,7 @@ cursor = conn.cursor()
 cursor.execute(&quot;SELECT name, grade FROM students WHERE grade &gt; ? ORDER BY grade DESC&quot;, (80,))
 for row in cursor.fetchall():
     print(row)
-conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>WHERE filters rows; ORDER BY grade DESC sorts results from highest to lowest grade. fetchall() returns every matching row as a list of tuples.</p><h3>Updating and deleting <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Updating and deleting</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-25243"><code><span class="kw">import</span> sqlite3
+conn.close()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>WHERE filters rows; ORDER BY grade DESC sorts results from highest to lowest grade. fetchall() returns every matching row as a list of tuples.</p><h3>Updating and deleting <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Updating and deleting</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-33402"><code><span class="kw">import</span> sqlite3
 &nbsp;
 conn = sqlite3.connect(<span class="str">&quot;school.db&quot;</span>)
 cursor = conn.cursor()
@@ -237,12 +236,12 @@ conn.close()</textarea><div class="tracer-controls"><button class="btn btn-prima
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a Python error, but a real security vulnerability</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79281"><code>name = input(<span class="str">&quot;Name: &quot;</span>)
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a Python error, but a real security vulnerability</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90876"><code>name = input(<span class="str">&quot;Name: &quot;</span>)
 cursor.execute(f<span class="str">&quot;SELECT * FROM students WHERE name = &#x27;{name}&#x27;&quot;</span>)</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-85059"><code>name = input(<span class="str">&quot;Name: &quot;</span>)
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-98879"><code>name = input(<span class="str">&quot;Name: &quot;</span>)
 cursor.execute(<span class="str">&quot;SELECT * FROM students WHERE name = ?&quot;</span>, (name,))</code></pre></div>
     </div>
   </div>
@@ -253,12 +252,12 @@ cursor.execute(<span class="str">&quot;SELECT * FROM students WHERE name = ?&quo
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises no crash, but the data silently never gets saved</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-45924"><code>cursor.execute(<span class="str">&quot;INSERT INTO students (name, grade) VALUES (?, ?)&quot;</span>, (<span class="str">&quot;Sam&quot;</span>, <span class="num">88</span>))
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises no crash, but the data silently never gets saved</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-339"><code>cursor.execute(<span class="str">&quot;INSERT INTO students (name, grade) VALUES (?, ?)&quot;</span>, (<span class="str">&quot;Sam&quot;</span>, <span class="num">88</span>))
 conn.close()  <span class="cm"># forgot commit — the insert is lost!</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62816"><code>cursor.execute(<span class="str">&quot;INSERT INTO students (name, grade) VALUES (?, ?)&quot;</span>, (<span class="str">&quot;Sam&quot;</span>, <span class="num">88</span>))
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-24572"><code>cursor.execute(<span class="str">&quot;INSERT INTO students (name, grade) VALUES (?, ?)&quot;</span>, (<span class="str">&quot;Sam&quot;</span>, <span class="num">88</span>))
 conn.commit()
 conn.close()</code></pre></div>
     </div>
@@ -271,7 +270,7 @@ conn.close()</code></pre></div>
   
 <div class="exercise-box" data-answer="&quot;SELECT * FROM students WHERE grade = ?&quot;" data-explain="The ? is safely replaced with 100 from the tuple, avoiding any risk of SQL injection.">
   <p><strong>Exercise 1 — Fill in the blank</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43890"><code>cursor.execute(____________________, (<span class="num">100</span>,))</code></pre></div>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-56927"><code>cursor.execute(____________________, (<span class="num">100</span>,))</code></pre></div>
   <p>Complete the execute() call to safely select all students with a grade of exactly 100, using a placeholder rather than string formatting.</p>
   <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
   <div class="tracer-controls">
@@ -281,7 +280,7 @@ conn.close()</code></pre></div>
   </div>
   <div class="ex-feedback"></div>
   <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 Use a single ? placeholder that matches the one value in the tuple.</div>
-  <div class="ex-sol" style="display:none;margin-top:.6rem;"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93473"><code><span class="str">&quot;SELECT * FROM students WHERE grade = ?&quot;</span></code></pre></div></div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-54666"><code><span class="str">&quot;SELECT * FROM students WHERE grade = ?&quot;</span></code></pre></div></div>
 </div>
   
 <div class="exercise-box" style="border-color:var(--rule);">
@@ -289,7 +288,7 @@ conn.close()</code></pre></div>
   <p>Build a tiny CRUD script for a &#x27;books&#x27; table (id, title, author) that creates the table, inserts two books, then selects and prints every book ordered by title.</p>
   <ul><li>Use CREATE TABLE IF NOT EXISTS</li><li>Insert at least 2 rows using ? placeholders</li><li>SELECT with ORDER BY title, and print each row</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>cursor.execute(&quot;SELECT * FROM books ORDER BY title&quot;)</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-54964"><code><span class="kw">import</span> sqlite3
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-91544"><code><span class="kw">import</span> sqlite3
 &nbsp;
 conn = sqlite3.connect(<span class="str">&quot;library.db&quot;</span>)
 cursor = conn.cursor()
