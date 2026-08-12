@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Object-Oriented Programming | Complete Python Course</title>
+<meta name="description" content="Modeling real things as classes and objects — the backbone of large Python programs.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/oop/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Object-Oriented Programming | Complete Python Course">
+<meta property="og:description" content="Modeling real things as classes and objects — the backbone of large Python programs.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/oop/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Object-Oriented Programming | Complete Python Course">
+<meta name="twitter:description" content="Modeling real things as classes and objects — the backbone of large Python programs.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Object-Oriented Programming", "description": "Modeling real things as classes and objects \u2014 the backbone of large Python programs.", "educationalLevel": "Advanced", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Object-Oriented Programming", "item": "https://github.com/engr-rabbi/complete-python-course/oop/"}]}</script>
+</head>
+<body data-root="../" data-slug="oop">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/">Generators</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/#concept">Concept &amp; syntax</a><a href="../oop/#examples">Examples</a><a href="../oop/#mistakes">Common mistakes</a><a href="../oop/#exercise">Exercise &amp; challenge</a><a href="../oop/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Object-Oriented Programming</nav>
+  <div class="badge-row"><span class="badge advanced">Advanced</span> <span class="badge time">70 min</span></div>
+  <h1>Module 14 — Object-Oriented Programming</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Modeling real things as classes and objects — the backbone of large Python programs.</p>
+  <p class="note">Prerequisite: Module 13 — Generators</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Define a class with an __init__ constructor and instance methods</li><li>Explain the difference between instance variables and class variables</li><li>Use inheritance to share behavior between related classes</li><li>Use @property and basic magic methods like __str__</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p><strong>Object-oriented programming (OOP)</strong> organizes code around <em>objects</em> — bundles of data
+(attributes) and behavior (methods) modeled on real-world things. A <strong>class</strong> is the blueprint; an
+<strong>object</strong> (or instance) is one specific thing built from that blueprint. Every <code>Dog</code>
+object shares the same blueprint, but each has its own name, age, and so on.</p>
+<p><code>self</code> is simply how a method refers to "the particular object I was called on." It's always the
+first parameter of an instance method, and Python passes it automatically — you never supply it yourself when
+calling the method.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90623"><code><span class="kw">class</span> ClassName:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, attribute):
+        <span class="kw">self</span>.attribute = attribute
+&nbsp;
+    <span class="kw">def</span> method(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="kw">self</span>.attribute
+&nbsp;
+obj = ClassName(<span class="str">&quot;value&quot;</span>)</code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>Your first class <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first class</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-98173"><code><span class="kw">class</span> Dog:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
+        <span class="kw">self</span>.name = name
+&nbsp;
+    <span class="kw">def</span> bark(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="kw">self</span>.name + <span class="str">&quot; says Woof!&quot;</span>
+&nbsp;
+rex = Dog(<span class="str">&quot;Rex&quot;</span>)
+<span class="kw">print</span>(rex.bark())</code></pre><div class="cb-output"><span class="out-label">Output</span>Rex says Woof!</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def bark(self):
+        return self.name + &quot; says Woof!&quot;
+
+rex = Dog(&quot;Rex&quot;)
+print(rex.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>__init__ runs automatically when Dog("Rex") is called, storing "Rex" as this object's name attribute.</p><h3>Multiple objects, independent state <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Multiple objects, independent state</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93506"><code>rex = Dog(<span class="str">&quot;Rex&quot;</span>)
+fido = Dog(<span class="str">&quot;Fido&quot;</span>)
+<span class="kw">print</span>(rex.bark())
+<span class="kw">print</span>(fido.bark())</code></pre><div class="cb-output"><span class="out-label">Output</span>Rex says Woof!
+Fido says Woof!</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">rex = Dog(&quot;Rex&quot;)
+fido = Dog(&quot;Fido&quot;)
+print(rex.bark())
+print(fido.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each object keeps its own separate copy of name — that's what 'instance' variables means.</p><h3>Class variables vs instance variables <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Class variables vs instance variables</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-69308"><code><span class="kw">class</span> Dog:
+    species = <span class="str">&quot;Canis familiaris&quot;</span>  <span class="cm"># class variable — shared by all dogs</span>
+&nbsp;
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
+        <span class="kw">self</span>.name = name  <span class="cm"># instance variable — unique per dog</span>
+&nbsp;
+rex = Dog(<span class="str">&quot;Rex&quot;</span>)
+fido = Dog(<span class="str">&quot;Fido&quot;</span>)
+<span class="kw">print</span>(rex.species, fido.species)
+<span class="kw">print</span>(rex.name, fido.name)</code></pre><div class="cb-output"><span class="out-label">Output</span>Canis familiaris Canis familiaris
+Rex Fido</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">class Dog:
+    species = &quot;Canis familiaris&quot;  # class variable — shared by all dogs
+
+    def __init__(self, name):
+        self.name = name  # instance variable — unique per dog
+
+rex = Dog(&quot;Rex&quot;)
+fido = Dog(&quot;Fido&quot;)
+print(rex.species, fido.species)
+print(rex.name, fido.name)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>species is defined once on the class and shared by every instance; name is set per-object inside __init__.</p><h3>Inheritance <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Inheritance</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-18127"><code><span class="kw">class</span> Animal:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
+        <span class="kw">self</span>.name = name
+    <span class="kw">def</span> speak(<span class="kw">self</span>):
+        <span class="kw">return</span> f<span class="str">&quot;{self.name} makes a sound.&quot;</span>
+&nbsp;
+<span class="kw">class</span> Dog(Animal):
+    <span class="kw">def</span> speak(<span class="kw">self</span>):
+        <span class="kw">return</span> f<span class="str">&quot;{self.name} barks.&quot;</span>
+&nbsp;
+rex = Dog(<span class="str">&quot;Rex&quot;</span>)
+<span class="kw">print</span>(rex.speak())</code></pre><div class="cb-output"><span class="out-label">Output</span>Rex barks.</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">class Animal:
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        return f&quot;{self.name} makes a sound.&quot;
+
+class Dog(Animal):
+    def speak(self):
+        return f&quot;{self.name} barks.&quot;
+
+rex = Dog(&quot;Rex&quot;)
+print(rex.speak())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>class Dog(Animal) means Dog inherits everything from Animal, then overrides speak() with its own version — this is called method overriding.</p><h3>@property and __str__ <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">@property and __str__</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15492"><code><span class="kw">class</span> Circle:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, radius):
+        <span class="kw">self</span>.radius = radius
+&nbsp;
+    @property
+    <span class="kw">def</span> area(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="num">3.14159</span> * <span class="kw">self</span>.radius ** <span class="num">2</span>
+&nbsp;
+    <span class="kw">def</span> __str__(<span class="kw">self</span>):
+        <span class="kw">return</span> f<span class="str">&quot;Circle(radius={self.radius})&quot;</span>
+&nbsp;
+c = Circle(<span class="num">4</span>)
+<span class="kw">print</span>(c)
+<span class="kw">print</span>(c.area)</code></pre><div class="cb-output"><span class="out-label">Output</span>Circle(radius=4)
+50.26544</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    @property
+    def area(self):
+        return 3.14159 * self.radius ** 2
+
+    def __str__(self):
+        return f&quot;Circle(radius={self.radius})&quot;
+
+c = Circle(4)
+print(c)
+print(c.area)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>@property lets you call c.area like a plain attribute even though it's computed. __str__ controls what print() shows for an object.</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 420 206" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inheritance chain"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--ink-faint)"/></marker></defs><rect x="110" y="10" width="200" height="42" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.6"/><text x="210" y="36" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:700">Animal</text><line x1="210" y1="52" x2="210" y2="80" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="110" y="82" width="200" height="42" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.6"/><text x="210" y="108" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:700">Dog</text><line x1="210" y1="124" x2="210" y2="152" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="110" y="154" width="200" height="42" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.6"/><text x="210" y="180" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:700">Golden Retriever</text></svg><figcaption>Inheritance forms a chain: Dog inherits from Animal, and a more specific class could inherit from Dog.</figcaption></figure>
+
+  
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  <h3>Watch an object get created and used</h3><p>Use the controls below to run this example one line at a time and watch the interpreter's memory update live.</p>
+<div class="tracer" data-trace="[{&quot;line&quot;: 6, &quot;vars&quot;: {}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;Dog(\&quot;Rex\&quot;) is called \u2014 Python creates a new, empty object and prepares to run __init__.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;self&quot;: &quot;&lt;the new Dog object&gt;&quot;, &quot;name&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;__init__ runs. self refers to the new object; name holds &#x27;Rex&#x27;.&quot;}, {&quot;line&quot;: 2, &quot;vars&quot;: {&quot;rex.name&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;self.name = name stores &#x27;Rex&#x27; onto the object itself, as an attribute.&quot;}, {&quot;line&quot;: 6, &quot;vars&quot;: {&quot;rex.name&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;__init__ finishes. rex now refers to a fully built Dog object.&quot;}, {&quot;line&quot;: 7, &quot;vars&quot;: {&quot;rex.name&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;print(rex.bark()) calls the bark method on rex.&quot;}, {&quot;line&quot;: 4, &quot;vars&quot;: {&quot;self.name (=rex.name)&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;Inside bark, self refers to rex, so self.name is &#x27;Rex&#x27;. The method builds and returns a string.&quot;}, {&quot;line&quot;: 7, &quot;vars&quot;: {&quot;rex.name&quot;: &quot;&#x27;Rex&#x27;&quot;}, &quot;output&quot;: &quot;Rex says Woof!&quot;, &quot;desc&quot;: &quot;The returned string is printed.&quot;}]">
+  <div class="tracer-panel trace-code">
+    <h4>Code</h4>
+    <div class="codeblock" style="margin:0;">
+      <div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Code</span></div>
+      <pre><code><span class="cb-line"><span class="kw">class</span> Dog:</span>
+<span class="cb-line">    <span class="kw">def</span> __init__(<span class="kw">self</span>, name):</span>
+<span class="cb-line">        <span class="kw">self</span>.name = name</span>
+<span class="cb-line">&nbsp;</span>
+<span class="cb-line">    <span class="kw">def</span> bark(<span class="kw">self</span>):</span>
+<span class="cb-line">        <span class="kw">return</span> <span class="kw">self</span>.name + <span class="str">&quot; says Woof!&quot;</span></span>
+<span class="cb-line">&nbsp;</span>
+<span class="cb-line">rex = Dog(<span class="str">&quot;Rex&quot;</span>)</span>
+<span class="cb-line"><span class="kw">print</span>(rex.bark())</span></code></pre>
+    </div>
+  </div>
+  <div class="tracer-panel">
+    <h4>Interpreter state</h4>
+    <div class="trace-mem"></div>
+    <div style="margin-top:.8rem;">
+      <h4 style="margin-bottom:.3rem;">Console output</h4>
+      <div class="cb-output trace-out" style="border-top:none;"></div>
+    </div>
+    <div class="tracer-desc"></div>
+    <div class="tracer-controls">
+      <button class="btn btn-primary btn-sm trace-play" type="button">▶ Run</button>
+      <button class="btn btn-ghost btn-sm trace-step" type="button">Step ⏭</button>
+      <button class="btn btn-ghost btn-sm trace-restart" type="button">⏮ Restart</button>
+      <label class="range-wrap">Speed
+        <select class="trace-speed">
+          <option value="1600">Slow</option>
+          <option value="900" selected>Normal</option>
+          <option value="400">Fast</option>
+        </select>
+      </label>
+      <span class="tracer-step-of"></span>
+    </div>
+    <input type="range" class="trace-range" min="0" max="0" value="0" step="1" style="width:100%;margin-top:.6rem;" aria-label="Scrub through execution steps">
+  </div>
+</div>
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>Forgetting self as the first parameter of a method is one of the most common OOP errors for beginners.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: bark() takes 0 positional arguments but 1 was given</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-80753"><code><span class="kw">class</span> Dog:
+    <span class="kw">def</span> bark():
+        <span class="kw">return</span> <span class="str">&quot;Woof!&quot;</span>
+&nbsp;
+rex = Dog()
+rex.bark()</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-83986"><code><span class="kw">class</span> Dog:
+    <span class="kw">def</span> bark(<span class="kw">self</span>):
+        <span class="kw">return</span> <span class="str">&quot;Woof!&quot;</span>
+&nbsp;
+rex = Dog()
+rex.bark()</code></pre></div>
+    </div>
+  </div>
+</div>
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 2</div>
+  <p>Confusing a class variable with an instance variable can cause values to be unexpectedly shared across every object.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but every Cart object ends up sharing the same items list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16127"><code><span class="kw">class</span> Cart:
+    items = []  <span class="cm"># class variable — shared by ALL carts!</span>
+&nbsp;
+    <span class="kw">def</span> add(<span class="kw">self</span>, item):
+        <span class="kw">self</span>.items.append(item)</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-86380"><code><span class="kw">class</span> Cart:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>):
+        <span class="kw">self</span>.items = []  <span class="cm"># instance variable — one per cart</span>
+&nbsp;
+    <span class="kw">def</span> add(<span class="kw">self</span>, item):
+        <span class="kw">self</span>.items.append(item)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Name classes in CapitalizedWords (PascalCase): Dog, ShoppingCart, not dog or shopping_cart.</li><li>Set instance-specific data inside __init__ using self, not as a bare class-level variable.</li><li>Favor composition or simple inheritance chains over deep, multi-level inheritance hierarchies.</li><li>Add __str__ to classes you plan to print, so debugging output is readable.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="3" data-explain="Cat(&quot;Whiskers&quot;, 3) sets self.name to &quot;Whiskers&quot; and self.age to 3.">
+  <p><strong>Exercise 1 — Predict the output</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75933"><code><span class="kw">class</span> Cat:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>, name, age):
+        <span class="kw">self</span>.name = name
+        <span class="kw">self</span>.age = age
+&nbsp;
+whiskers = Cat(<span class="str">&quot;Whiskers&quot;</span>, <span class="num">3</span>)
+<span class="kw">print</span>(whiskers.age)</code></pre></div>
+  <p>What does this print?</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 age is set from the second constructor argument.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><p>3</p></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Model a BankAccount class with a balance, a deposit(amount) method, and a withdraw(amount) method that refuses to overdraw the account.</p>
+  <ul><li>Store balance as an instance variable, starting at 0</li><li>deposit() should increase balance</li><li>withdraw() should print an error message instead of allowing a negative balance</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>Check `if amount &gt; self.balance:` before subtracting inside withdraw().</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-28475"><code><span class="kw">class</span> BankAccount:
+    <span class="kw">def</span> __init__(<span class="kw">self</span>):
+        <span class="kw">self</span>.balance = <span class="num">0</span>
+&nbsp;
+    <span class="kw">def</span> deposit(<span class="kw">self</span>, amount):
+        <span class="kw">self</span>.balance += amount
+&nbsp;
+    <span class="kw">def</span> withdraw(<span class="kw">self</span>, amount):
+        <span class="kw">if</span> amount &gt; <span class="kw">self</span>.balance:
+            <span class="kw">print</span>(<span class="str">&quot;Insufficient funds&quot;</span>)
+        <span class="kw">else</span>:
+            <span class="kw">self</span>.balance -= amount
+&nbsp;
+acc = BankAccount()
+acc.deposit(<span class="num">100</span>)
+acc.withdraw(<span class="num">30</span>)
+<span class="kw">print</span>(acc.balance)</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-oop">
+  
+<div class="quiz-q" data-correct="1" id="quiz-oop-q0">
+  <p class="qtext">1. What is self inside an instance method?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">A global variable</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">A reference to the specific object the method was called on</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">A required keyword</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">The class name</div>
+  <div class="quiz-explain">self refers to the current instance and is passed automatically by Python.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-oop-q1">
+  <p class="qtext">2. What is the difference between a class variable and an instance variable?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">No difference</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Class variables are shared across all instances; instance variables are unique per object</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Instance variables are shared; class variables are unique</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Class variables can&#x27;t hold numbers</div>
+  <div class="quiz-explain">Instance variables (set via self.x = ...) are per-object; class variables are shared.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-oop-q2">
+  <p class="qtext">3. What does class Dog(Animal) mean?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Dog and Animal are unrelated</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Dog inherits attributes and methods from Animal</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Animal inherits from Dog</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">This is invalid syntax</div>
+  <div class="quiz-explain">Dog(Animal) means Dog is a subclass that inherits from the Animal superclass.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-oop-q3">
+  <p class="qtext">4. What does __init__ do?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Deletes an object</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Runs automatically when an object is created, to set it up</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Prints an object</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Compares two objects</div>
+  <div class="quiz-explain">__init__ is the constructor, called automatically when you create a new object.</div>
+</div>
+<div class="quiz-q" data-correct="0" id="quiz-oop-q4">
+  <p class="qtext">5. What does @property allow you to do?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Make a method callable like a plain attribute</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Delete a class</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Skip writing __init__</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Create a global variable</div>
+  <div class="quiz-explain">@property lets a method be accessed without parentheses, as if it were an attribute.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>A class is a blueprint; an object is one instance built from it.</li><li>self refers to the current object inside an instance method.</li><li>Instance variables are per-object; class variables are shared by all instances.</li><li>Inheritance (class Dog(Animal)) lets a subclass reuse and override a superclass's behavior.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../generators/">Generators</a><a href="../exceptions/">Error &amp; Exception Handling</a><a href="../file-io/">File I/O</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../generators/"><div class="dir">← Previous</div><div>13 — Generators</div></a><a class="next" href="../exceptions/"><div class="dir">Next →</div><div>15 — Error &amp; Exception Handling</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

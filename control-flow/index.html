@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Flow &amp; Loops | Complete Python Course</title>
+<meta name="description" content="Teaching your program to make decisions and repeat work — if/else, while, and for.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/control-flow/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Control Flow &amp; Loops | Complete Python Course">
+<meta property="og:description" content="Teaching your program to make decisions and repeat work — if/else, while, and for.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/control-flow/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Control Flow &amp; Loops | Complete Python Course">
+<meta name="twitter:description" content="Teaching your program to make decisions and repeat work — if/else, while, and for.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Control Flow & Loops", "description": "Teaching your program to make decisions and repeat work \u2014 if/else, while, and for.", "educationalLevel": "Beginner", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Control Flow & Loops", "item": "https://github.com/engr-rabbi/complete-python-course/control-flow/"}]}</script>
+</head>
+<body data-root="../" data-slug="control-flow">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/#concept">Concept &amp; syntax</a><a href="../control-flow/#examples">Examples</a><a href="../control-flow/#mistakes">Common mistakes</a><a href="../control-flow/#exercise">Exercise &amp; challenge</a><a href="../control-flow/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/">Generators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Control Flow &amp; Loops</nav>
+  <div class="badge-row"><span class="badge beginner">Beginner</span> <span class="badge time">55 min</span></div>
+  <h1>Module 04 — Control Flow &amp; Loops</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Teaching your program to make decisions and repeat work — if/else, while, and for.</p>
+  <p class="note">Prerequisite: Module 03 — Strings & User Input</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Branch program logic with if / elif / else and the and/or/not operators</li><li>Repeat code with while loops, including a safe exit condition</li><li>Iterate with for loops and range(), including a step argument</li><li>Control loop flow precisely with break and continue</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p><strong>Control flow</strong> is what turns a list of instructions into a program that can actually make
+decisions. Two tools do almost all of the work: <code>if</code> statements (decide <em>whether</em> to run some
+code) and loops (decide <em>how many times</em> to run some code).</p>
+<p>A <code>for</code> loop is used when you know what you're iterating over — a range of numbers, a string, a
+list. A <code>while</code> loop is used when you want to repeat "until some condition changes," which might
+happen an unpredictable number of times — like re-prompting a user until they type valid input.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-63310"><code><span class="kw">if</span> condition:
+    ...
+<span class="kw">elif</span> other_condition:
+    ...
+<span class="kw">else</span>:
+    ...
+&nbsp;
+<span class="kw">while</span> condition:
+    ...
+&nbsp;
+<span class="kw">for</span> item <span class="kw">in</span> range(<span class="num">5</span>):
+    ...</code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>if / elif / else <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">if / elif / else</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-18792"><code>age = <span class="num">20</span>
+<span class="kw">if</span> age &lt; <span class="num">13</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Child&quot;</span>)
+<span class="kw">elif</span> age &lt; <span class="num">20</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Teenager&quot;</span>)
+<span class="kw">else</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Adult&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>Adult</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">age = 20
+if age &lt; 13:
+    print(&quot;Child&quot;)
+elif age &lt; 20:
+    print(&quot;Teenager&quot;)
+else:
+    print(&quot;Adult&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Python checks each condition top to bottom and runs the first block whose condition is True, then skips the rest.</p><h3>Combining conditions <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Combining conditions</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-5837"><code>age = <span class="num">25</span>
+has_id = <span class="kw">True</span>
+<span class="kw">if</span> age &gt;= <span class="num">18</span> <span class="kw">and</span> has_id:
+    <span class="kw">print</span>(<span class="str">&quot;Entry allowed&quot;</span>)
+<span class="kw">else</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Entry denied&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>Entry allowed</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">age = 25
+has_id = True
+if age &gt;= 18 and has_id:
+    print(&quot;Entry allowed&quot;)
+else:
+    print(&quot;Entry denied&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p><code>and</code> requires both sides to be True; <code>or</code> needs only one; <code>not</code> flips a boolean.</p><h3>while loop with a running total <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">while loop with a running total</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-57937"><code>total = <span class="num">0</span>
+n = <span class="num">1</span>
+<span class="kw">while</span> n &lt;= <span class="num">5</span>:
+    total = total + n
+    n = n + <span class="num">1</span>
+<span class="kw">print</span>(total)</code></pre><div class="cb-output"><span class="out-label">Output</span>15</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">total = 0
+n = 1
+while n &lt;= 5:
+    total = total + n
+    n = n + 1
+print(total)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>The loop keeps running as long as n <= 5 stays True. Each pass adds n to total, then increases n — this is how you sum 1+2+3+4+5.</p><h3>for loop over a string <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">for loop over a string</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-38458"><code><span class="kw">for</span> letter <span class="kw">in</span> <span class="str">&quot;Py!&quot;</span>:
+    <span class="kw">print</span>(letter)</code></pre><div class="cb-output"><span class="out-label">Output</span>P
+y
+!</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">for letter in &quot;Py!&quot;:
+    print(letter)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A for loop can iterate directly over any sequence — including a string, character by character.</p><h3>break and continue <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">break and continue</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-47512"><code><span class="kw">for</span> number <span class="kw">in</span> range(<span class="num">10</span>):
+    <span class="kw">if</span> number == <span class="num">7</span>:
+        <span class="kw">break</span>
+    <span class="kw">if</span> number % <span class="num">2</span> != <span class="num">0</span>:
+        <span class="kw">continue</span>
+    <span class="kw">print</span>(number)</code></pre><div class="cb-output"><span class="out-label">Output</span>0
+2
+4
+6</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">for number in range(10):
+    if number == 7:
+        break
+    if number % 2 != 0:
+        continue
+    print(number)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>continue skips straight to the next iteration (skipping odd numbers here); break exits the loop entirely the moment number hits 7.</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 520 354" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--ink-faint)"/></marker></defs><rect x="120" y="10" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="38" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">Check condition</text><line x1="260" y1="56" x2="260" y2="80" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="82" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="110" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">True → run loop body</text><line x1="260" y1="128" x2="260" y2="152" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="154" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="182" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">Update / advance</text><line x1="260" y1="200" x2="260" y2="224" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="226" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="254" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">Re-check condition</text><line x1="260" y1="272" x2="260" y2="296" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="298" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="326" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">False → exit loop</text></svg><figcaption>Every loop — while or for — follows this same check → run → repeat shape.</figcaption></figure>
+
+  
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  <h3>Watch a for loop iterate</h3><p>Use the controls below to run this example one line at a time and watch the interpreter's memory update live.</p>
+<div class="tracer" data-trace="[{&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 0}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;range(5) hands the loop the next value: i = 0.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;i&quot;: 0}, &quot;output&quot;: &quot;0&quot;, &quot;desc&quot;: &quot;print(i) runs, adding 0 to the console.&quot;}, {&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 1}, &quot;output&quot;: &quot;0&quot;, &quot;desc&quot;: &quot;range(5) hands the loop the next value: i = 1.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;i&quot;: 1}, &quot;output&quot;: &quot;0\n1&quot;, &quot;desc&quot;: &quot;print(i) runs, adding 1 to the console.&quot;}, {&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 2}, &quot;output&quot;: &quot;0\n1&quot;, &quot;desc&quot;: &quot;range(5) hands the loop the next value: i = 2.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;i&quot;: 2}, &quot;output&quot;: &quot;0\n1\n2&quot;, &quot;desc&quot;: &quot;print(i) runs, adding 2 to the console.&quot;}, {&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 3}, &quot;output&quot;: &quot;0\n1\n2&quot;, &quot;desc&quot;: &quot;range(5) hands the loop the next value: i = 3.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;i&quot;: 3}, &quot;output&quot;: &quot;0\n1\n2\n3&quot;, &quot;desc&quot;: &quot;print(i) runs, adding 3 to the console.&quot;}, {&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 4}, &quot;output&quot;: &quot;0\n1\n2\n3&quot;, &quot;desc&quot;: &quot;range(5) hands the loop the next value: i = 4.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;i&quot;: 4}, &quot;output&quot;: &quot;0\n1\n2\n3\n4&quot;, &quot;desc&quot;: &quot;print(i) runs, adding 4 to the console.&quot;}, {&quot;line&quot;: 0, &quot;vars&quot;: {&quot;i&quot;: 4}, &quot;output&quot;: &quot;0\n1\n2\n3\n4&quot;, &quot;desc&quot;: &quot;range(5) has no more values (0\u20134 all used) \u2014 the loop ends.&quot;}]">
+  <div class="tracer-panel trace-code">
+    <h4>Code</h4>
+    <div class="codeblock" style="margin:0;">
+      <div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Code</span></div>
+      <pre><code><span class="cb-line"><span class="kw">for</span> i <span class="kw">in</span> range(<span class="num">5</span>):</span>
+<span class="cb-line">    <span class="kw">print</span>(i)</span></code></pre>
+    </div>
+  </div>
+  <div class="tracer-panel">
+    <h4>Interpreter state</h4>
+    <div class="trace-mem"></div>
+    <div style="margin-top:.8rem;">
+      <h4 style="margin-bottom:.3rem;">Console output</h4>
+      <div class="cb-output trace-out" style="border-top:none;"></div>
+    </div>
+    <div class="tracer-desc"></div>
+    <div class="tracer-controls">
+      <button class="btn btn-primary btn-sm trace-play" type="button">▶ Run</button>
+      <button class="btn btn-ghost btn-sm trace-step" type="button">Step ⏭</button>
+      <button class="btn btn-ghost btn-sm trace-restart" type="button">⏮ Restart</button>
+      <label class="range-wrap">Speed
+        <select class="trace-speed">
+          <option value="1600">Slow</option>
+          <option value="900" selected>Normal</option>
+          <option value="400">Fast</option>
+        </select>
+      </label>
+      <span class="tracer-step-of"></span>
+    </div>
+    <input type="range" class="trace-range" min="0" max="0" value="0" step="1" style="width:100%;margin-top:.6rem;" aria-label="Scrub through execution steps">
+  </div>
+</div>
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>Forgetting to change the variable a while loop depends on creates an infinite loop that never stops.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises the program hangs forever (must be force-stopped)</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55191"><code>n = <span class="num">1</span>
+<span class="kw">while</span> n &lt;= <span class="num">5</span>:
+    <span class="kw">print</span>(n)
+    <span class="cm"># forgot n = n + 1</span></code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62828"><code>n = <span class="num">1</span>
+<span class="kw">while</span> n &lt;= <span class="num">5</span>:
+    <span class="kw">print</span>(n)
+    n = n + <span class="num">1</span></code></pre></div>
+    </div>
+  </div>
+</div>
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 2</div>
+  <p>Using = (assignment) instead of == (comparison) inside an if is a very common typo.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError: invalid syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-73816"><code>age = <span class="num">18</span>
+<span class="kw">if</span> age = <span class="num">18</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Just became an adult&quot;</span>)</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75754"><code>age = <span class="num">18</span>
+<span class="kw">if</span> age == <span class="num">18</span>:
+    <span class="kw">print</span>(<span class="str">&quot;Just became an adult&quot;</span>)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Use <code>for</code> when you know the number of iterations or are iterating over a collection.</li><li>Use <code>while</code> only when the stopping condition can't be known in advance.</li><li>Keep loop bodies short — extract a function if the logic inside grows past a few lines (the DRY principle: Don't Repeat Yourself).</li><li>Double-check every while loop has a way to eventually become False.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="==" data-explain="= assigns a value; == compares two values. Conditions always need ==.">
+  <p><strong>Exercise 1 — Debug this code</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-30825"><code><span class="kw">for</span> n <span class="kw">in</span> range(<span class="num">9</span>):
+    <span class="kw">if</span> n % <span class="num">2</span> = <span class="num">0</span>:
+        <span class="kw">print</span>(n)</code></pre></div>
+  <p>This code should print all even numbers from 0 to 8, but it has a bug. What single character needs to change?</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 Comparing equality needs a double equals sign.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><p>Change n % 2 = 0 to n % 2 == 0</p></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Write a program using a while loop that keeps asking the user to &#x27;Enter a number greater than 10&#x27; until they succeed, then prints &#x27;Thanks!&#x27;.</p>
+  <ul><li>Use a while loop with a condition that starts False</li><li>Convert input() to int() before comparing</li><li>Print &#x27;Thanks!&#x27; once the loop ends</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>Initialize a variable to something that&#x27;s guaranteed to fail the check the first time, e.g. number = 0.</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-84008"><code>number = <span class="num">0</span>
+<span class="kw">while</span> number &lt;= <span class="num">10</span>:
+    number = int(input(<span class="str">&quot;Enter a number greater than 10: &quot;</span>))
+<span class="kw">print</span>(<span class="str">&quot;Thanks!&quot;</span>)</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-control-flow">
+  
+<div class="quiz-q" data-correct="1" id="quiz-control-flow-q0">
+  <p class="qtext">1. What does the DRY principle stand for?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Do Repeat Yearly</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Don&#x27;t Repeat Yourself</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Data Range Yield</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Debug Regularly, Yes</div>
+  <div class="quiz-explain">DRY: Don&#x27;t Repeat Yourself — avoid duplicating logic.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-control-flow-q1">
+  <p class="qtext">2. What&#x27;s the difference between break and continue?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">They&#x27;re identical</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">break exits the loop; continue skips to the next iteration</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">break skips one line; continue exits the loop</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Neither works inside for loops</div>
+  <div class="quiz-explain">break stops the loop completely; continue jumps to the next iteration.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-control-flow-q2">
+  <p class="qtext">3. What does range(5) produce?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">1,2,3,4,5</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">0,1,2,3,4</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">0,1,2,3,4,5</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">5 only</div>
+  <div class="quiz-explain">range(5) produces 5 values starting at 0: 0,1,2,3,4.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-control-flow-q3">
+  <p class="qtext">4. Which operator checks equality (not assignment)?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">=</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">==</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">!=</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">eq()</div>
+  <div class="quiz-explain">== compares two values for equality.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-control-flow-q4">
+  <p class="qtext">5. When should you prefer a for loop over a while loop?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">When the number of iterations is unknown</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">When iterating over a known collection or range</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Never — while is always better</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Only inside functions</div>
+  <div class="quiz-explain">for loops shine when you&#x27;re iterating over something with a known size.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>if/elif/else branches your program based on conditions, checked top to bottom.</li><li>and, or, and not combine boolean conditions.</li><li>while repeats until a condition becomes False — make sure it eventually does.</li><li>for iterates over a known sequence; break exits early, continue skips ahead.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../strings/">Strings &amp; User Input</a><a href="../functions/">Functions</a><a href="../lists/">Lists</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../strings/"><div class="dir">← Previous</div><div>03 — Strings &amp; User Input</div></a><a class="next" href="../functions/"><div class="dir">Next →</div><div>05 — Functions</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

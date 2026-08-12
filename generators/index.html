@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Generators | Complete Python Course</title>
+<meta name="description" content="Producing values one at a time, on demand, instead of all at once.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/generators/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generators | Complete Python Course">
+<meta property="og:description" content="Producing values one at a time, on demand, instead of all at once.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/generators/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Generators | Complete Python Course">
+<meta name="twitter:description" content="Producing values one at a time, on demand, instead of all at once.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Generators", "description": "Producing values one at a time, on demand, instead of all at once.", "educationalLevel": "Advanced", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Generators", "item": "https://github.com/engr-rabbi/complete-python-course/generators/"}]}</script>
+</head>
+<body data-root="../" data-slug="generators">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/#concept">Concept &amp; syntax</a><a href="../generators/#examples">Examples</a><a href="../generators/#mistakes">Common mistakes</a><a href="../generators/#exercise">Exercise &amp; challenge</a><a href="../generators/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Generators</nav>
+  <div class="badge-row"><span class="badge advanced">Advanced</span> <span class="badge time">35 min</span></div>
+  <h1>Module 13 — Generators</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Producing values one at a time, on demand, instead of all at once.</p>
+  <p class="note">Prerequisite: Module 12 — Closures & Decorators</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Write a generator function using yield</li><li>Explain lazy evaluation and why it saves memory</li><li>Write a generator comprehension</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p>A normal function computes its entire result and returns it all at once. A <strong>generator</strong>
+function instead uses <code>yield</code> to hand back one value at a time, pausing itself exactly where it left
+off, and only resuming when the next value is asked for. This is called <strong>lazy evaluation</strong>.</p>
+<p>The payoff is memory. A list of one million numbers takes up space for all one million, all the time. A
+generator that yields one million numbers only ever holds <em>one</em> number in memory at any moment — hugely
+useful when working with large or even infinite sequences.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43026"><code><span class="kw">def</span> count_up_to(n):
+    i = <span class="num">1</span>
+    <span class="kw">while</span> i &lt;= n:
+        <span class="kw">yield</span> i
+        i += <span class="num">1</span>
+&nbsp;
+<span class="kw">for</span> number <span class="kw">in</span> count_up_to(<span class="num">5</span>):
+    <span class="kw">print</span>(number)</code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>A simple generator function <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A simple generator function</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43026"><code><span class="kw">def</span> count_up_to(n):
+    i = <span class="num">1</span>
+    <span class="kw">while</span> i &lt;= n:
+        <span class="kw">yield</span> i
+        i += <span class="num">1</span>
+&nbsp;
+<span class="kw">for</span> number <span class="kw">in</span> count_up_to(<span class="num">5</span>):
+    <span class="kw">print</span>(number)</code></pre><div class="cb-output"><span class="out-label">Output</span>1
+2
+3
+4
+5</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">def count_up_to(n):
+    i = 1
+    while i &lt;= n:
+        yield i
+        i += 1
+
+for number in count_up_to(5):
+    print(number)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each time the loop asks for the next value, the function resumes right after its last yield, runs a bit more, then pauses again.</p><h3>Calling next() manually <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Calling next() manually</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-28248"><code><span class="kw">def</span> two_numbers():
+    <span class="kw">yield</span> <span class="num">10</span>
+    <span class="kw">yield</span> <span class="num">20</span>
+&nbsp;
+gen = two_numbers()
+<span class="kw">print</span>(next(gen))
+<span class="kw">print</span>(next(gen))</code></pre><div class="cb-output"><span class="out-label">Output</span>10
+20</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">def two_numbers():
+    yield 10
+    yield 20
+
+gen = two_numbers()
+print(next(gen))
+print(next(gen))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>next() pulls the next yielded value out of the generator. Calling it a third time here would raise StopIteration.</p><h3>Generator comprehension <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Generator comprehension</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-22001"><code>squares = (x * x <span class="kw">for</span> x <span class="kw">in</span> range(<span class="num">1000000</span>))
+<span class="kw">print</span>(next(squares))
+<span class="kw">print</span>(next(squares))</code></pre><div class="cb-output"><span class="out-label">Output</span>0
+1</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">squares = (x * x for x in range(1000000))
+print(next(squares))
+print(next(squares))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Parentheses (instead of square brackets) create a generator comprehension — a million squares are never all stored in memory at once, only computed as needed.</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 520 282" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flow diagram"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--ink-faint)"/></marker></defs><rect x="120" y="10" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="38" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">Generator function called → returns a generator object (nothing runs yet)</text><line x1="260" y1="56" x2="260" y2="80" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="82" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="110" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">next() called → runs until the first yield, returns that value, then pauses</text><line x1="260" y1="128" x2="260" y2="152" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="154" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="182" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">next() called again → resumes right after the last yield</text><line x1="260" y1="200" x2="260" y2="224" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="120" y="226" width="280" height="46" rx="8" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="260" y="254" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px">Function runs off the end → StopIteration is raised</text></svg><figcaption>A generator&#x27;s execution pauses and resumes across multiple calls to next().</figcaption></figure>
+
+  <details class="disclosure"><summary>💡 Why does this work?</summary><div class="disclosure-body"><p>Read the concept explanation above again slowly, line by line — every keyword there maps directly onto a line of code in the examples. If it still doesn't click, re-run the traced example (if this lesson has one) one step at a time.</p></div></details>
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>A function containing yield never runs its body immediately when called — calling it just creates a generator object.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints something like &lt;generator object numbers at 0x...&gt;, not 1 or 2</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-23469"><code><span class="kw">def</span> numbers():
+    <span class="kw">yield</span> <span class="num">1</span>
+    <span class="kw">yield</span> <span class="num">2</span>
+&nbsp;
+<span class="kw">print</span>(numbers())</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-64221"><code><span class="kw">def</span> numbers():
+    <span class="kw">yield</span> <span class="num">1</span>
+    <span class="kw">yield</span> <span class="num">2</span>
+&nbsp;
+<span class="kw">for</span> n <span class="kw">in</span> numbers():
+    <span class="kw">print</span>(n)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Use a generator instead of building a full list whenever you only need to iterate once, especially over large data.</li><li>Prefer a generator comprehension (x for x in ...) over a list comprehension when you don't need random access or len().</li><li>Remember a generator can only be iterated through once — once exhausted, you must create a new one.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="b" data-explain="The first next(g) advances past &#x27;a&#x27; without printing it; the second next(g) returns &#x27;b&#x27;, which gets printed.">
+  <p><strong>Exercise 1 — Predict the output</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-97937"><code><span class="kw">def</span> letters():
+    <span class="kw">yield</span> <span class="str">&quot;a&quot;</span>
+    <span class="kw">yield</span> <span class="str">&quot;b&quot;</span>
+&nbsp;
+g = letters()
+next(g)
+<span class="kw">print</span>(next(g))</code></pre></div>
+  <p>What does this print?</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 The first next() consumes &#x27;a&#x27;; the second call moves on to &#x27;b&#x27;.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><p>b</p></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Write a generator function even_numbers(limit) that yields even numbers from 0 up to (not including) limit, then use it in a for loop to print them.</p>
+  <ul><li>Use yield, not return</li><li>Only yield even numbers</li><li>Stop before reaching limit</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>A while loop with i += 2 naturally produces only even numbers if it starts at 0.</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-96578"><code><span class="kw">def</span> even_numbers(limit):
+    i = <span class="num">0</span>
+    <span class="kw">while</span> i &lt; limit:
+        <span class="kw">yield</span> i
+        i += <span class="num">2</span>
+&nbsp;
+<span class="kw">for</span> n <span class="kw">in</span> even_numbers(<span class="num">10</span>):
+    <span class="kw">print</span>(n)</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-generators">
+  
+<div class="quiz-q" data-correct="1" id="quiz-generators-q0">
+  <p class="qtext">1. What keyword turns a regular function into a generator function?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">return</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">yield</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">async</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">pause</div>
+  <div class="quiz-explain">yield is what makes a function a generator.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-generators-q1">
+  <p class="qtext">2. What happens when you call a generator function?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Its whole body runs immediately</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">It returns a generator object; nothing runs yet</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">It raises an error</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">It returns a list</div>
+  <div class="quiz-explain">Calling a generator function just creates the generator — execution starts on the first next() call.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-generators-q2">
+  <p class="qtext">3. Why are generators more memory-efficient than building a full list?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">They compress data</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">They only hold one value in memory at a time, computing each on demand</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">They use a database</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">They aren&#x27;t actually more efficient</div>
+  <div class="quiz-explain">Lazy evaluation means generators never store the whole sequence at once.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>yield turns a function into a generator that produces values one at a time.</li><li>Calling a generator function doesn't run its body — only next() (or a for loop) does.</li><li>Generators use lazy evaluation, making them far more memory-efficient than full lists for large sequences.</li><li>A generator can only be consumed once.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../closures-decorators/">Closures &amp; Decorators</a><a href="../functional-programming/">Functional Programming &amp; Advanced Functions</a><a href="../oop/">Object-Oriented Programming</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../closures-decorators/"><div class="dir">← Previous</div><div>12 — Closures &amp; Decorators</div></a><a class="next" href="../oop/"><div class="dir">Next →</div><div>14 — Object-Oriented Programming</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

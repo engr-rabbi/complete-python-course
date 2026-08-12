@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print, Variables &amp; Basic Output | Complete Python Course</title>
+<meta name="description" content="Talking back to the screen, storing values with names, and Python&#x27;s core data types.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/print-output/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Print, Variables &amp; Basic Output | Complete Python Course">
+<meta property="og:description" content="Talking back to the screen, storing values with names, and Python&#x27;s core data types.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/print-output/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Print, Variables &amp; Basic Output | Complete Python Course">
+<meta name="twitter:description" content="Talking back to the screen, storing values with names, and Python&#x27;s core data types.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Print, Variables & Basic Output", "description": "Talking back to the screen, storing values with names, and Python's core data types.", "educationalLevel": "Beginner", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Print, Variables & Basic Output", "item": "https://github.com/engr-rabbi/complete-python-course/print-output/"}]}</script>
+</head>
+<body data-root="../" data-slug="print-output">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/#concept">Concept &amp; syntax</a><a href="../print-output/#examples">Examples</a><a href="../print-output/#mistakes">Common mistakes</a><a href="../print-output/#exercise">Exercise &amp; challenge</a><a href="../print-output/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/">Generators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Print, Variables &amp; Basic Output</nav>
+  <div class="badge-row"><span class="badge beginner">Beginner</span> <span class="badge time">40 min</span></div>
+  <h1>Module 02 — Print, Variables &amp; Basic Output</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Talking back to the screen, storing values with names, and Python's core data types.</p>
+  <p class="note">Prerequisite: Module 01 — Introduction & Setup</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Use print() with multiple values, separators, and escape sequences</li><li>Create and update variables, and understand Python&#x27;s naming rules</li><li>Use Python as a calculator with +, -, *, /, //, %, **</li><li>Identify a value&#x27;s type using type()</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p><code>print()</code> is how a Python program talks to the outside world. A <strong>variable</strong> is a
+named box in your computer's memory that holds a value — think of it as a sticky note with a name on it, stuck
+to a piece of data. Once you understand these two things, you can already build something that computes and
+reports results, which is the heart of programming.</p>
+<p>Variables matter because programs need to <em>remember</em> things between steps: a user's age, a running
+total, a game score. Without a name for a value, you'd have no way to refer back to it later in your code.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-58114"><code>variable_name = value
+<span class="kw">print</span>(value1, value2, sep=<span class="str">&quot;, &quot;</span>, end=<span class="str">&quot;\n&quot;</span>)</code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>print() with several values <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">print() with several values</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-44478"><code><span class="kw">print</span>(<span class="str">&quot;Score:&quot;</span>, <span class="num">95</span>, <span class="str">&quot;/&quot;</span>, <span class="num">100</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>Score: 95 / 100</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">print(&quot;Score:&quot;, 95, &quot;/&quot;, 100)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>print() accepts any number of items separated by commas and automatically puts a space between them.</p><h3>Escape sequences <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Escape sequences</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-58346"><code><span class="kw">print</span>(<span class="str">&quot;She said, \&quot;Python is fun!\&quot;&quot;</span>)
+<span class="kw">print</span>(<span class="str">&quot;Line one\nLine two&quot;</span>)
+<span class="kw">print</span>(<span class="str">&quot;Tab\tSeparated&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>She said, &quot;Python is fun!&quot;
+Line one
+Line two
+Tab	Separated</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">print(&quot;She said, \&quot;Python is fun!\&quot;&quot;)
+print(&quot;Line one\nLine two&quot;)
+print(&quot;Tab\tSeparated&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A backslash before a character gives it special meaning: <code>\"</code> is a literal quote, <code>\n</code> is a new line, and <code>\t</code> is a tab.</p><h3>Raw strings and emoji <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Raw strings and emoji</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94943"><code>path = r<span class="str">&quot;C:\Users\name\Documents&quot;</span>
+<span class="kw">print</span>(path)
+<span class="kw">print</span>(<span class="str">&quot;Python is fun 🐍&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>C:\Users\name\Documents
+Python is fun 🐍</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">path = r&quot;C:\Users\name\Documents&quot;
+print(path)
+print(&quot;Python is fun 🐍&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Prefixing a string with <code>r</code> makes it a <strong>raw string</strong>, so backslashes are treated literally — essential for Windows file paths. Emoji are just Unicode characters and print like any other text.</p><h3>Python as a calculator <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python as a calculator</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79430"><code><span class="kw">print</span>(<span class="num">7</span> + <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> - <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> * <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> / <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> // <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> % <span class="num">3</span>)
+<span class="kw">print</span>(<span class="num">7</span> ** <span class="num">2</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>10
+4
+21
+2.3333333333333335
+2
+1
+49</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">print(7 + 3)
+print(7 - 3)
+print(7 * 3)
+print(7 / 3)
+print(7 // 3)
+print(7 % 3)
+print(7 ** 2)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p><code>/</code> always gives a decimal result, <code>//</code> gives the whole-number (floor) division, <code>%</code> gives the remainder, and <code>**</code> raises to a power.</p><h3>Variables and type() <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Variables and type()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-71756"><code>age = <span class="num">25</span>
+price = <span class="num">19.99</span>
+name = <span class="str">&quot;Maria&quot;</span>
+is_member = <span class="kw">True</span>
+<span class="kw">print</span>(type(age), type(price), type(name), type(is_member))</code></pre><div class="cb-output"><span class="out-label">Output</span>&lt;class &#x27;int&#x27;&gt; &lt;class &#x27;float&#x27;&gt; &lt;class &#x27;str&#x27;&gt; &lt;class &#x27;bool&#x27;&gt;</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">age = 25
+price = 19.99
+name = &quot;Maria&quot;
+is_member = True
+print(type(age), type(price), type(name), type(is_member))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Python figures out a value's type automatically. The four basics here are integers, floating-point numbers, strings (text), and booleans (True/False).</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 320 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Variable name pointing to value Python">
+<text x="160" y="24" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:16px;font-weight:700">name</text>
+<line x1="160" y1="32" x2="160" y2="54" style="stroke:var(--rule);stroke-width:2" marker-end="url(#arrow)"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--ink-faint)"/></marker></defs>
+<rect x="80" y="58" width="160" height="48" rx="6" style="fill:var(--surface);stroke:var(--accent-2);stroke-width:2"/>
+<text x="160" y="88" text-anchor="middle" style="fill:var(--accent-2);font-family:var(--font-mono);font-size:15px;font-weight:700">Python</text>
+</svg><figcaption>A variable is a name pointing at a value stored in memory.</figcaption></figure>
+
+  
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  <h3>See variables appear in memory as each line runs</h3><p>Use the controls below to run this example one line at a time and watch the interpreter's memory update live.</p>
+<div class="tracer" data-trace="[{&quot;line&quot;: 0, &quot;vars&quot;: {&quot;x&quot;: 10}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;x = 10 creates a name x in memory and points it at the value 10.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;x&quot;: 10, &quot;y&quot;: 20}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;y = 20 creates a second name, y, pointing at 20.&quot;}, {&quot;line&quot;: 2, &quot;vars&quot;: {&quot;x&quot;: 10, &quot;y&quot;: 20, &quot;result&quot;: 30}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;Python evaluates x + y (10 + 20 = 30) and stores it in result.&quot;}, {&quot;line&quot;: 3, &quot;vars&quot;: {&quot;x&quot;: 10, &quot;y&quot;: 20, &quot;result&quot;: 30}, &quot;output&quot;: &quot;30&quot;, &quot;desc&quot;: &quot;print(result) looks up result&#x27;s current value and displays it.&quot;}]">
+  <div class="tracer-panel trace-code">
+    <h4>Code</h4>
+    <div class="codeblock" style="margin:0;">
+      <div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Code</span></div>
+      <pre><code><span class="cb-line">x = <span class="num">10</span></span>
+<span class="cb-line">y = <span class="num">20</span></span>
+<span class="cb-line">result = x + y</span>
+<span class="cb-line"><span class="kw">print</span>(result)</span></code></pre>
+    </div>
+  </div>
+  <div class="tracer-panel">
+    <h4>Interpreter state</h4>
+    <div class="trace-mem"></div>
+    <div style="margin-top:.8rem;">
+      <h4 style="margin-bottom:.3rem;">Console output</h4>
+      <div class="cb-output trace-out" style="border-top:none;"></div>
+    </div>
+    <div class="tracer-desc"></div>
+    <div class="tracer-controls">
+      <button class="btn btn-primary btn-sm trace-play" type="button">▶ Run</button>
+      <button class="btn btn-ghost btn-sm trace-step" type="button">Step ⏭</button>
+      <button class="btn btn-ghost btn-sm trace-restart" type="button">⏮ Restart</button>
+      <label class="range-wrap">Speed
+        <select class="trace-speed">
+          <option value="1600">Slow</option>
+          <option value="900" selected>Normal</option>
+          <option value="400">Fast</option>
+        </select>
+      </label>
+      <span class="tracer-step-of"></span>
+    </div>
+    <input type="range" class="trace-range" min="0" max="0" value="0" step="1" style="width:100%;margin-top:.6rem;" aria-label="Scrub through execution steps">
+  </div>
+</div>
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>Variable names in Python must start with a letter or underscore, contain no spaces, and can&#x27;t be a reserved word like &lt;code&gt;print&lt;/code&gt; or &lt;code&gt;class&lt;/code&gt;.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68279"><code>2nd_place = <span class="str">&quot;Silver&quot;</span>
+my variable = <span class="num">5</span></code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-32026"><code>second_place = <span class="str">&quot;Silver&quot;</span>
+my_variable = <span class="num">5</span></code></pre></div>
+    </div>
+  </div>
+</div>
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 2</div>
+  <p>Forgetting quotes around text makes Python think you&#x27;re referring to a variable that doesn&#x27;t exist yet.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises NameError: name &#x27;Hello&#x27; is not defined</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15240"><code><span class="kw">print</span>(Hello)</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-76725"><code><span class="kw">print</span>(<span class="str">&quot;Hello&quot;</span>)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Use <code>snake_case</code> for variable names: <code>total_price</code>, not <code>TotalPrice</code>.</li><li>Pick descriptive names — <code>age</code> beats <code>a</code> once code gets longer than a few lines.</li><li>Use raw strings (<code>r"..."</code>) for Windows file paths and regular expressions.</li><li>Check a value's type with <code>type()</code> whenever a bug looks type-related.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="print(&quot;Total:&quot;, count, &quot;apples&quot;)|print(f&quot;Total: {count} apples&quot;)" data-explain="Both a comma-separated print() and an f-string produce the same visible output.">
+  <p><strong>Exercise 1 — Fill in the blank</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75964"><code>count = <span class="num">42</span>
+____________________</code></pre></div>
+  <p>Complete the line so that it prints exactly: Total: 42 apples (with the word &quot;Total:&quot;, a space, the number, a space, and &quot;apples&quot;). Type only the missing print() call.</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 print() can take multiple comma-separated arguments and will space them automatically.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-74850"><code><span class="kw">print</span>(<span class="str">&quot;Total:&quot;</span>, count, <span class="str">&quot;apples&quot;</span>)</code></pre></div></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Write a program that stores the price of an item and a quantity in two variables, then prints the total cost formatted to two decimal places.</p>
+  <ul><li>Use variables named price and quantity</li><li>Compute total = price * quantity</li><li>Print something like &#x27;Total: $59.97&#x27;</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>You can round with round(total, 2), or format with an f-string like f&quot;{total:.2f}&quot;.</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43342"><code>price = <span class="num">19.99</span>
+quantity = <span class="num">3</span>
+total = price * quantity
+<span class="kw">print</span>(f<span class="str">&quot;Total: ${total:.2f}&quot;</span>)</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-print-output">
+  
+<div class="quiz-q" data-correct="1" id="quiz-print-output-q0">
+  <p class="qtext">1. What does 7 // 3 evaluate to in Python?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">2.33</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">2</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">3</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">1</div>
+  <div class="quiz-explain">// is floor (whole-number) division, so 7 // 3 is 2.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-print-output-q1">
+  <p class="qtext">2. Which escape sequence inserts a new line inside a string?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">\t</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">\n</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">\\</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">\s</div>
+  <div class="quiz-explain">\n represents a newline character.</div>
+</div>
+<div class="quiz-q" data-correct="2" id="quiz-print-output-q2">
+  <p class="qtext">3. Which of these is a valid Python variable name?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">2nd_place</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">my-variable</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">_score</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">class</div>
+  <div class="quiz-explain">Names can start with an underscore or letter; hyphens aren&#x27;t allowed and &#x27;class&#x27; is a reserved keyword.</div>
+</div>
+<div class="quiz-q" data-correct="2" id="quiz-print-output-q3">
+  <p class="qtext">4. What type does type(19.99) report?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">int</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">str</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">float</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">bool</div>
+  <div class="quiz-explain">Numbers with a decimal point are floats.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-print-output-q4">
+  <p class="qtext">5. What does a raw string like r&quot;C:\Users&quot; do?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Converts text to uppercase</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Treats backslashes as literal characters, not escape codes</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Removes all spaces</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Runs the string as code</div>
+  <div class="quiz-explain">The r prefix disables escape-sequence processing, which is handy for Windows paths.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>print() displays one or more values, automatically spacing and newlining them.</li><li>Variables are names pointing at values; naming rules matter (no spaces, no reserved words).</li><li>Python's core math operators include //, %, and ** alongside the familiar +, -, *, /.</li><li>type() tells you exactly what kind of value you're working with.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../introduction/">Introduction &amp; Setup</a><a href="../strings/">Strings &amp; User Input</a><a href="../control-flow/">Control Flow &amp; Loops</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../introduction/"><div class="dir">← Previous</div><div>01 — Introduction &amp; Setup</div></a><a class="next" href="../strings/"><div class="dir">Next →</div><div>03 — Strings &amp; User Input</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Complete Python Course</title>
+<meta name="description" content="Learn Python from zero to advanced with interactive examples, visual code execution, exercises, quizzes, and real-world projects. Free and self-paced.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Complete Python Course">
+<meta property="og:description" content="Learn Python from zero to advanced with interactive examples, visual code execution, exercises, quizzes, and real-world projects. Free and self-paced.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Complete Python Course">
+<meta name="twitter:description" content="Learn Python from zero to advanced with interactive examples, visual code execution, exercises, quizzes, and real-world projects. Free and self-paced.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Complete Python Course", "url": "https://github.com/engr-rabbi/complete-python-course/", "potentialAction": {"@type": "SearchAction", "target": "https://github.com/engr-rabbi/complete-python-course/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Complete Python Course", "description": "A complete, free, interactive Python course from beginner to advanced level.", "provider": {"@type": "Organization", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need any experience to start this course?", "acceptedAnswer": {"@type": "Answer", "text": "None at all. Module 01 assumes you've never written a line of code before."}}, {"@type": "Question", "name": "Do I need to install anything to try the examples?", "acceptedAnswer": {"@type": "Answer", "text": "Most examples include a live, browser-based runner (powered by Pyodide) so you can experiment with no installation. Module 01 also walks through installing Python and VS Code for when you're ready to work locally."}}, {"@type": "Question", "name": "Is my progress saved if I close the tab?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 lesson completion and quiz activity are saved directly in your browser's local storage. Nothing is sent to a server, and no account is required."}}, {"@type": "Question", "name": "Is this course free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, entirely \u2014 it's designed to be a free, open, self-paced Python academy."}}, {"@type": "Question", "name": "What Python version does this course use?", "acceptedAnswer": {"@type": "Answer", "text": "Python 3 throughout. Python 2 reached end-of-life in January 2020 and isn't covered."}}, {"@type": "Question", "name": "Can I suggest a topic or report an error?", "acceptedAnswer": {"@type": "Answer", "text": "This is a static, open codebase \u2014 see the About page for how the content and source are organized."}}]}</script>
+</head>
+<body data-root="" data-slug="">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="" aria-current="page">Home</a><a href="roadmap/">Course</a><a href="playground/">Playground</a><a href="exercises/">Exercises</a><a href="projects/">Projects</a><a href="cheatsheets/">Cheatsheets</a><a href="glossary/">Glossary</a><a href="about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="generators/">Generators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<section class="hero">
+  <div>
+    <div class="hero-eyebrow">Free &middot; Self-paced &middot; No account needed</div>
+    <h1>Master Python from Beginner to Advanced</h1>
+    <p class="lead">Learn through interactive examples, visual code execution, exercises, quizzes, and real-world projects — a complete, free Python academy in your browser.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="introduction/">Start Learning →</a>
+      <a class="btn btn-ghost" href="roadmap/">Explore the Roadmap</a>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><div class="n">20</div><div class="l">Modules</div></div>
+      <div class="stat"><div class="n">100+</div><div class="l">Examples &amp; exercises</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">Sign-ups required</div></div>
+    </div>
+  </div>
+  <div class="hero-repl">
+    <div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">python3</span></div>
+    <pre><code><span class="repl-prompt">&gt;&gt;&gt; </span><span class="kw">def</span> learn(you):
+<span class="repl-prompt">... </span>    skills = []
+<span class="repl-prompt">... </span>    <span class="kw">while</span> curious:
+<span class="repl-prompt">... </span>        skills.append(<span class="str">"one more concept"</span>)
+<span class="repl-prompt">... </span>    <span class="kw">return</span> skills
+<span class="repl-prompt">&gt;&gt;&gt; </span>learn(you)
+<span class="cm"># → a real, working understanding of Python</span></code></pre>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why learn Python here?</h2>
+  <p class="section-lead">Every lesson follows the same shape: understand the concept, watch it execute, try it yourself, then prove it with a quiz.</p>
+  <div class="grid grid-4">
+    <div class="card"><div class="card-eyebrow">Visual</div><h3>Watch code run</h3><p>Step through real examples line by line and see variables change in a live memory panel.</p></div>
+    <div class="card"><div class="card-eyebrow">Interactive</div><h3>Run it yourself</h3><p>Every example is editable and runnable right in your browser, powered by Pyodide — no install required.</p></div>
+    <div class="card"><div class="card-eyebrow">Structured</div><h3>Beginner → Advanced</h3><p>20 modules build in order, from your first print() to a full GUI + database capstone project.</p></div>
+    <div class="card"><div class="card-eyebrow">Private</div><h3>Progress, saved locally</h3><p>Your completed lessons and quiz scores are saved in your browser — no account, no tracking.</p></div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--surface-2);border-radius:16px;">
+  <h2>Your course progress</h2>
+  <p class="section-lead" data-progress-text>0 / 20 lessons (0%)</p>
+  <div class="progress-track" style="height:14px;"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  <div class="hero-cta"><a class="btn btn-primary" href="roadmap/">Continue where you left off</a></div>
+</section>
+
+<section class="section">
+  <h2>What you'll learn</h2>
+  <p class="section-lead">A full syllabus — fundamentals, data structures, functional and object-oriented programming, files &amp; databases, GUIs, and real projects.</p>
+  <div class="grid grid-3"><a class="card" href="introduction/"><div class="card-eyebrow">01</div><h3>Introduction &amp; Setup</h3><p>What Python is, why half the internet runs on it, and getting your machine ready to write real code.</p></a><a class="card" href="print-output/"><div class="card-eyebrow">02</div><h3>Print, Variables &amp; Basic Output</h3><p>Talking back to the screen, storing values with names, and Python's core data types.</p></a><a class="card" href="strings/"><div class="card-eyebrow">03</div><h3>Strings &amp; User Input</h3><p>Slicing, formatting, and reading what the user types.</p></a><a class="card" href="control-flow/"><div class="card-eyebrow">04</div><h3>Control Flow &amp; Loops</h3><p>Teaching your program to make decisions and repeat work — if/else, while, and for.</p></a><a class="card" href="functions/"><div class="card-eyebrow">05</div><h3>Functions</h3><p>Packaging logic into reusable, named blocks — the single biggest step toward organized code.</p></a><a class="card" href="lists/"><div class="card-eyebrow">06</div><h3>Lists</h3><p>Python's flexible, ordered, changeable collection — the workhorse data structure.</p></a><a class="card" href="tuples/"><div class="card-eyebrow">07</div><h3>Tuples</h3><p>An ordered collection that, once created, can never be changed.</p></a><a class="card" href="dictionaries/"><div class="card-eyebrow">08</div><h3>Dictionaries</h3><p>Looking things up by name instead of by position — key/value storage.</p></a><a class="card" href="sets-comprehensions/"><div class="card-eyebrow">09</div><h3>Sets &amp; Comprehensions</h3><p>Unique collections, and a faster, more Pythonic way to build lists and dictionaries.</p></a><a class="card" href="roadmap/"><div class="card-eyebrow">+11 more</div><h3>See the full roadmap →</h3><p>Functional programming, decorators, generators, OOP, exceptions, files, OS, Tkinter, projects, and SQL.</p></a></div>
+</section>
+
+<section class="section">
+  <h2>Frequently asked questions</h2>
+  <details class="faq-item"><summary>Do I need any experience to start this course?</summary><p>None at all. Module 01 assumes you've never written a line of code before.</p></details><details class="faq-item"><summary>Do I need to install anything to try the examples?</summary><p>Most examples include a live, browser-based runner (powered by Pyodide) so you can experiment with no installation. Module 01 also walks through installing Python and VS Code for when you're ready to work locally.</p></details><details class="faq-item"><summary>Is my progress saved if I close the tab?</summary><p>Yes — lesson completion and quiz activity are saved directly in your browser's local storage. Nothing is sent to a server, and no account is required.</p></details><details class="faq-item"><summary>Is this course free?</summary><p>Yes, entirely — it's designed to be a free, open, self-paced Python academy.</p></details><details class="faq-item"><summary>What Python version does this course use?</summary><p>Python 3 throughout. Python 2 reached end-of-life in January 2020 and isn't covered.</p></details><details class="faq-item"><summary>Can I suggest a topic or report an error?</summary><p>This is a static, open codebase — see the About page for how the content and source are organized.</p></details>
+</section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="roadmap/">Course roadmap</a><a href="exercises/">Exercises</a><a href="projects/">Projects</a><a href="playground/">Playground</a></div><div><h4>Reference</h4><a href="cheatsheets/">Cheatsheets</a><a href="glossary/">Glossary</a><a href="faq/">FAQ</a></div><div><h4>Modules</h4><a href="introduction/">01 Introduction</a><a href="oop/">14 OOP</a><a href="sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="about/">About</a><a href="sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

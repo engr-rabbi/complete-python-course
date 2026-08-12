@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lists | Complete Python Course</title>
+<meta name="description" content="Python&#x27;s flexible, ordered, changeable collection — the workhorse data structure.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/lists/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lists | Complete Python Course">
+<meta property="og:description" content="Python&#x27;s flexible, ordered, changeable collection — the workhorse data structure.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/lists/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lists | Complete Python Course">
+<meta name="twitter:description" content="Python&#x27;s flexible, ordered, changeable collection — the workhorse data structure.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Lists", "description": "Python's flexible, ordered, changeable collection \u2014 the workhorse data structure.", "educationalLevel": "Beginner", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Lists", "item": "https://github.com/engr-rabbi/complete-python-course/lists/"}]}</script>
+</head>
+<body data-root="../" data-slug="lists">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/#concept">Concept &amp; syntax</a><a href="../lists/#examples">Examples</a><a href="../lists/#mistakes">Common mistakes</a><a href="../lists/#exercise">Exercise &amp; challenge</a><a href="../lists/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/">Functional Programming & Advanced Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/">Generators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Lists</nav>
+  <div class="badge-row"><span class="badge beginner">Beginner</span> <span class="badge time">50 min</span></div>
+  <h1>Module 06 — Lists</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Python's flexible, ordered, changeable collection — the workhorse data structure.</p>
+  <p class="note">Prerequisite: Module 05 — Functions</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Create, index, and slice lists</li><li>Add and remove items with append(), insert(), remove(), pop()</li><li>Loop through a list, including nested lists</li><li>Convert between lists and strings with join() and split()</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p>A <strong>list</strong> is an ordered, changeable collection of values, written with square brackets:
+<code>[10, 20, 30]</code>. Lists can hold any type — even a mix of types, or other lists — and they're the tool
+you reach for whenever you need to keep track of "more than one" of something: a shopping list, student names,
+scores in a game.</p>
+<p>Unlike a string, a list is <strong>mutable</strong> — you can change, add, or remove items after it's created.
+That single property (mutability) is what separates lists from the tuples you'll meet in the next module.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-39624"><code>numbers = [<span class="num">10</span>, <span class="num">20</span>, <span class="num">30</span>, <span class="num">40</span>]
+numbers.append(<span class="num">50</span>)
+numbers[<span class="num">0</span>]      <span class="cm"># first item</span>
+numbers[-<span class="num">1</span>]     <span class="cm"># last item</span>
+numbers[<span class="num">1</span>:<span class="num">3</span>]    <span class="cm"># a slice</span></code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>Creating and indexing a list <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Creating and indexing a list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-29963"><code>scores = [<span class="num">88</span>, <span class="num">92</span>, <span class="num">79</span>, <span class="num">95</span>]
+<span class="kw">print</span>(scores[<span class="num">0</span>])
+<span class="kw">print</span>(scores[-<span class="num">1</span>])</code></pre><div class="cb-output"><span class="out-label">Output</span>88
+95</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">scores = [88, 92, 79, 95]
+print(scores[0])
+print(scores[-1])</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Lists use the same 0-based indexing as strings — scores[0] is the first score, scores[-1] is the last.</p><h3>append(), insert(), remove() <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">append(), insert(), remove()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-3545"><code>tasks = [<span class="str">&quot;email&quot;</span>, <span class="str">&quot;meeting&quot;</span>]
+tasks.append(<span class="str">&quot;lunch&quot;</span>)
+tasks.insert(<span class="num">1</span>, <span class="str">&quot;review PR&quot;</span>)
+tasks.remove(<span class="str">&quot;meeting&quot;</span>)
+<span class="kw">print</span>(tasks)</code></pre><div class="cb-output"><span class="out-label">Output</span>[&#x27;email&#x27;, &#x27;review PR&#x27;, &#x27;lunch&#x27;]</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">tasks = [&quot;email&quot;, &quot;meeting&quot;]
+tasks.append(&quot;lunch&quot;)
+tasks.insert(1, &quot;review PR&quot;)
+tasks.remove(&quot;meeting&quot;)
+print(tasks)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>append() adds to the end; insert(index, value) adds at a specific position; remove(value) deletes the first matching item.</p><h3>Looping through a list <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Looping through a list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-1779"><code>colors = [<span class="str">&quot;red&quot;</span>, <span class="str">&quot;green&quot;</span>, <span class="str">&quot;blue&quot;</span>]
+<span class="kw">for</span> color <span class="kw">in</span> colors:
+    <span class="kw">print</span>(color.upper())</code></pre><div class="cb-output"><span class="out-label">Output</span>RED
+GREEN
+BLUE</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">colors = [&quot;red&quot;, &quot;green&quot;, &quot;blue&quot;]
+for color in colors:
+    print(color.upper())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A for loop gives you each item in turn — no manual indexing needed.</p><h3>Nested lists <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Nested lists</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-11974"><code>grid = [[<span class="num">1</span>, <span class="num">2</span>], [<span class="num">3</span>, <span class="num">4</span>], [<span class="num">5</span>, <span class="num">6</span>]]
+<span class="kw">print</span>(grid[<span class="num">1</span>][<span class="num">0</span>])
+<span class="kw">for</span> row <span class="kw">in</span> grid:
+    <span class="kw">print</span>(row)</code></pre><div class="cb-output"><span class="out-label">Output</span>3
+[1, 2]
+[3, 4]
+[5, 6]</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">grid = [[1, 2], [3, 4], [5, 6]]
+print(grid[1][0])
+for row in grid:
+    print(row)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>A list can contain other lists. grid[1][0] means 'row at index 1, then item at index 0 in that row'.</p><h3>join(), split(), min(), max() <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">join(), split(), min(), max()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-61052"><code>sentence = <span class="str">&quot;the quick brown fox&quot;</span>
+words = sentence.split()
+<span class="kw">print</span>(words)
+<span class="kw">print</span>(<span class="str">&quot;-&quot;</span>.join(words))
+scores = [<span class="num">88</span>, <span class="num">92</span>, <span class="num">79</span>, <span class="num">95</span>]
+<span class="kw">print</span>(min(scores), max(scores))</code></pre><div class="cb-output"><span class="out-label">Output</span>[&#x27;the&#x27;, &#x27;quick&#x27;, &#x27;brown&#x27;, &#x27;fox&#x27;]
+the-quick-brown-fox
+79 95</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">sentence = &quot;the quick brown fox&quot;
+words = sentence.split()
+print(words)
+print(&quot;-&quot;.join(words))
+scores = [88, 92, 79, 95]
+print(min(scores), max(scores))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>split() turns a string into a list of words; join() does the reverse, gluing a list back into a string with a separator.</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 560 110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="numbers = [10, 20, 30, 40]"><text x="280" y="20" text-anchor="middle" style="fill:var(--ink-faint);font-family:var(--font-mono);font-size:12px">numbers = [10, 20, 30, 40]</text><rect x="100.0" y="34" width="90.0" height="44" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="145.0" y="61" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:600">10</text><text x="145.0" y="96" text-anchor="middle" style="fill:var(--ink-faint);font-family:var(--font-mono);font-size:11px">0</text><rect x="190.0" y="34" width="90.0" height="44" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="235.0" y="61" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:600">20</text><text x="235.0" y="96" text-anchor="middle" style="fill:var(--ink-faint);font-family:var(--font-mono);font-size:11px">1</text><rect x="280.0" y="34" width="90.0" height="44" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="325.0" y="61" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:600">30</text><text x="325.0" y="96" text-anchor="middle" style="fill:var(--ink-faint);font-family:var(--font-mono);font-size:11px">2</text><rect x="370.0" y="34" width="90.0" height="44" style="fill:var(--surface);stroke:var(--rule);stroke-width:1.5"/><text x="415.0" y="61" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:14px;font-weight:600">40</text><text x="415.0" y="96" text-anchor="middle" style="fill:var(--ink-faint);font-family:var(--font-mono);font-size:11px">3</text></svg><figcaption>Every item in a list sits at a numbered index, starting from 0.</figcaption></figure>
+
+  
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  <h3>Watch a list grow</h3><p>Use the controls below to run this example one line at a time and watch the interpreter's memory update live.</p>
+<div class="tracer" data-trace="[{&quot;line&quot;: 0, &quot;vars&quot;: {&quot;fruits&quot;: &quot;[&#x27;apple&#x27;, &#x27;banana&#x27;]&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;A list with two items is created. apple is at index 0, banana at index 1.&quot;}, {&quot;line&quot;: 1, &quot;vars&quot;: {&quot;fruits&quot;: &quot;[&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;cherry&#x27;]&quot;}, &quot;output&quot;: &quot;&quot;, &quot;desc&quot;: &quot;append() adds &#x27;cherry&#x27; to the end, at the next available index (2).&quot;}, {&quot;line&quot;: 2, &quot;vars&quot;: {&quot;fruits&quot;: &quot;[&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;cherry&#x27;]&quot;}, &quot;output&quot;: &quot;[&#x27;apple&#x27;, &#x27;banana&#x27;, &#x27;cherry&#x27;]&quot;, &quot;desc&quot;: &quot;print() displays the full, current list.&quot;}]">
+  <div class="tracer-panel trace-code">
+    <h4>Code</h4>
+    <div class="codeblock" style="margin:0;">
+      <div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Code</span></div>
+      <pre><code><span class="cb-line">fruits = [<span class="str">&quot;apple&quot;</span>, <span class="str">&quot;banana&quot;</span>]</span>
+<span class="cb-line">fruits.append(<span class="str">&quot;cherry&quot;</span>)</span>
+<span class="cb-line"><span class="kw">print</span>(fruits)</span></code></pre>
+    </div>
+  </div>
+  <div class="tracer-panel">
+    <h4>Interpreter state</h4>
+    <div class="trace-mem"></div>
+    <div style="margin-top:.8rem;">
+      <h4 style="margin-bottom:.3rem;">Console output</h4>
+      <div class="cb-output trace-out" style="border-top:none;"></div>
+    </div>
+    <div class="tracer-desc"></div>
+    <div class="tracer-controls">
+      <button class="btn btn-primary btn-sm trace-play" type="button">▶ Run</button>
+      <button class="btn btn-ghost btn-sm trace-step" type="button">Step ⏭</button>
+      <button class="btn btn-ghost btn-sm trace-restart" type="button">⏮ Restart</button>
+      <label class="range-wrap">Speed
+        <select class="trace-speed">
+          <option value="1600">Slow</option>
+          <option value="900" selected>Normal</option>
+          <option value="400">Fast</option>
+        </select>
+      </label>
+      <span class="tracer-step-of"></span>
+    </div>
+    <input type="range" class="trace-range" min="0" max="0" value="0" step="1" style="width:100%;margin-top:.6rem;" aria-label="Scrub through execution steps">
+  </div>
+</div>
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>Accessing an index that doesn&#x27;t exist raises an error rather than returning something like None.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises IndexError: list index out of range</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-47184"><code>colors = [<span class="str">&quot;red&quot;</span>, <span class="str">&quot;green&quot;</span>]
+<span class="kw">print</span>(colors[<span class="num">5</span>])</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-73879"><code>colors = [<span class="str">&quot;red&quot;</span>, <span class="str">&quot;green&quot;</span>]
+<span class="kw">if</span> len(colors) &gt; <span class="num">5</span>:
+    <span class="kw">print</span>(colors[<span class="num">5</span>])
+<span class="kw">else</span>:
+    <span class="kw">print</span>(<span class="str">&quot;No item at that index&quot;</span>)</code></pre></div>
+    </div>
+  </div>
+</div>
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 2</div>
+  <p>A Python list is not a fixed-size array like in some other languages — but pop() and remove() still fail loudly on invalid input, so check first.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises ValueError: list.remove(x): x not in list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-41085"><code>items = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>]
+items.remove(<span class="num">9</span>)</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-14071"><code>items = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>]
+<span class="kw">if</span> <span class="num">9</span> <span class="kw">in</span> items:
+    items.remove(<span class="num">9</span>)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Use <code>in</code> to check membership before removing: <code>if x in my_list:</code>.</li><li>Prefer list comprehensions (next module) over manual append loops when building a new list.</li><li>Name list variables in the plural: <code>students</code>, not <code>student</code>.</li><li>Use <code>len(my_list)</code> rather than hardcoding a list's size.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="[1, 2, 3, 4, 5]" data-explain="sort() mutates the list directly, arranging the numbers from smallest to largest.">
+  <p><strong>Exercise 1 — Predict the output</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2028"><code>nums = [<span class="num">5</span>, <span class="num">1</span>, <span class="num">4</span>, <span class="num">2</span>, <span class="num">3</span>]
+nums.sort()
+<span class="kw">print</span>(nums)</code></pre></div>
+  <p>What does this print?</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 sort() rearranges the list in place, in ascending order by default.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><p>[1, 2, 3, 4, 5]</p></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Write a program that starts with an empty list, adds five numbers typed by the user (converted with int()), and then prints the list along with its sum and average.</p>
+  <ul><li>Use a loop to collect 5 numbers with input()</li><li>Use append() to build the list</li><li>Print the sum and the average (sum / count)</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>sum(my_list) adds all the numbers in a list for you.</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-92382"><code>numbers = []
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="num">5</span>):
+    numbers.append(int(input(<span class="str">&quot;Enter a number: &quot;</span>)))
+<span class="kw">print</span>(numbers)
+<span class="kw">print</span>(<span class="str">&quot;Sum:&quot;</span>, sum(numbers))
+<span class="kw">print</span>(<span class="str">&quot;Average:&quot;</span>, sum(numbers) / len(numbers))</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-lists">
+  
+<div class="quiz-q" data-correct="1" id="quiz-lists-q0">
+  <p class="qtext">1. Which method adds an item to the end of a list?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">insert()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">append()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">add()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">extend()</div>
+  <div class="quiz-explain">append() adds a single item to the end of the list.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-lists-q1">
+  <p class="qtext">2. What is the key difference between a list and a tuple?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Lists can&#x27;t hold numbers</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Lists are mutable (changeable); tuples are not</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Tuples are always faster to create</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">There is no difference</div>
+  <div class="quiz-explain">Mutability is the core distinction — you&#x27;ll see it in the next module.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-lists-q2">
+  <p class="qtext">3. What does grid[1][0] mean for grid = [[1,2],[3,4]]?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Item 1 of the whole grid</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Row 1, item 0 → 3</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Row 0, item 1 → 2</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">This is invalid syntax</div>
+  <div class="quiz-explain">grid[1] is [3, 4], and [0] of that is 3.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-lists-q3">
+  <p class="qtext">4. Which function turns a list of words back into a single string?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">split()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">join()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">combine()</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">merge()</div>
+  <div class="quiz-explain">&#x27;-&#x27;.join(list_of_words) glues the words together using the separator.</div>
+</div>
+<div class="quiz-q" data-correct="2" id="quiz-lists-q4">
+  <p class="qtext">5. What happens if you access an index beyond a list&#x27;s length?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Python returns None</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Python returns 0</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">IndexError is raised</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">The list grows automatically</div>
+  <div class="quiz-explain">Out-of-range indexing raises an IndexError.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>Lists are ordered, mutable collections written with square brackets.</li><li>append(), insert(), remove(), and pop() modify a list in place.</li><li>Lists can be nested; access an inner item with grid[row][col].</li><li>split() and join() convert between strings and lists of words.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../strings/">Strings &amp; User Input</a><a href="../tuples/">Tuples</a><a href="../sets-comprehensions/">Sets &amp; Comprehensions</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../functions/"><div class="dir">← Previous</div><div>05 — Functions</div></a><a class="next" href="../tuples/"><div class="dir">Next →</div><div>07 — Tuples</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

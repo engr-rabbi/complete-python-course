@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Functional Programming &amp; Advanced Functions | Complete Python Course</title>
+<meta name="description" content="Lambda expressions, map/filter, and treating functions as ordinary values.">
+<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/functional-programming/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Functional Programming &amp; Advanced Functions | Complete Python Course">
+<meta property="og:description" content="Lambda expressions, map/filter, and treating functions as ordinary values.">
+<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/functional-programming/">
+<meta property="og:site_name" content="Complete Python Course">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Functional Programming &amp; Advanced Functions | Complete Python Course">
+<meta name="twitter:description" content="Lambda expressions, map/filter, and treating functions as ordinary values.">
+<meta name="theme-color" content="#B65C38">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Functional Programming & Advanced Functions", "description": "Lambda expressions, map/filter, and treating functions as ordinary values.", "educationalLevel": "Intermediate", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Functional Programming & Advanced Functions", "item": "https://github.com/engr-rabbi/complete-python-course/functional-programming/"}]}</script>
+</head>
+<body data-root="../" data-slug="functional-programming">
+<script>window.PY_TOTAL_LESSONS = 20;</script>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="topbar">
+  <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
+  <a class="brand" href="../index.html"><span class="mark">Py</span>Complete Python Course</a>
+  <nav class="topnav" aria-label="Main"><a href="../" aria-current="page">Home</a><a href="../roadmap/">Course</a><a href="../playground/">Playground</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../about/">About</a></nav>
+  <div class="topbar-spacer"></div>
+  <div id="search-box" role="search">
+    <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
+    <div id="search-results" role="listbox"></div>
+  </div>
+  <button id="theme-toggle" class="icon-btn" type="button">🖥 <span class="vis-label">System</span></button>
+</header>
+<div class="page-with-sidebar">
+
+<aside class="sidebar" id="course-sidebar">
+  <div class="sidebar-progress">
+    <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
+  </div>
+  <div style="margin-bottom:1rem;"><a href="../" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="../roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="../playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="../exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="../projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="../cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="../glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="../about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
+  <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
+  
+<details class="side-module">
+  <summary><span class="num">01</span><span class="side-check" data-slug="introduction"></span> Introduction &amp; Setup</summary>
+  <a href="../introduction/">Introduction & Setup</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">02</span><span class="side-check" data-slug="print-output"></span> Print, Variables &amp; Basic Output</summary>
+  <a href="../print-output/">Print, Variables & Basic Output</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">03</span><span class="side-check" data-slug="strings"></span> Strings &amp; User Input</summary>
+  <a href="../strings/">Strings & User Input</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">04</span><span class="side-check" data-slug="control-flow"></span> Control Flow &amp; Loops</summary>
+  <a href="../control-flow/">Control Flow & Loops</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">05</span><span class="side-check" data-slug="functions"></span> Functions</summary>
+  <a href="../functions/">Functions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">06</span><span class="side-check" data-slug="lists"></span> Lists</summary>
+  <a href="../lists/">Lists</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">07</span><span class="side-check" data-slug="tuples"></span> Tuples</summary>
+  <a href="../tuples/">Tuples</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">08</span><span class="side-check" data-slug="dictionaries"></span> Dictionaries</summary>
+  <a href="../dictionaries/">Dictionaries</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">09</span><span class="side-check" data-slug="sets-comprehensions"></span> Sets &amp; Comprehensions</summary>
+  <a href="../sets-comprehensions/">Sets & Comprehensions</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">10</span><span class="side-check" data-slug="args-kwargs"></span> *args and **kwargs</summary>
+  <a href="../args-kwargs/">*args and **kwargs</a>
+</details>
+<details class="side-module" open>
+  <summary><span class="num">11</span><span class="side-check" data-slug="functional-programming"></span> Functional Programming &amp; Advanced Functions</summary>
+  <a href="../functional-programming/#concept">Concept &amp; syntax</a><a href="../functional-programming/#examples">Examples</a><a href="../functional-programming/#mistakes">Common mistakes</a><a href="../functional-programming/#exercise">Exercise &amp; challenge</a><a href="../functional-programming/#quiz">Quiz</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">12</span><span class="side-check" data-slug="closures-decorators"></span> Closures &amp; Decorators</summary>
+  <a href="../closures-decorators/">Closures & Decorators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">13</span><span class="side-check" data-slug="generators"></span> Generators</summary>
+  <a href="../generators/">Generators</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">14</span><span class="side-check" data-slug="oop"></span> Object-Oriented Programming</summary>
+  <a href="../oop/">Object-Oriented Programming</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">15</span><span class="side-check" data-slug="exceptions"></span> Error &amp; Exception Handling</summary>
+  <a href="../exceptions/">Error & Exception Handling</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">16</span><span class="side-check" data-slug="file-io"></span> File I/O</summary>
+  <a href="../file-io/">File I/O</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">17</span><span class="side-check" data-slug="os-system"></span> OS &amp; System Modules</summary>
+  <a href="../os-system/">OS & System Modules</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">18</span><span class="side-check" data-slug="tkinter"></span> GUI Programming with Tkinter</summary>
+  <a href="../tkinter/">GUI Programming with Tkinter</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">19</span><span class="side-check" data-slug="projects"></span> Python Projects</summary>
+  <a href="../projects/">Python Projects</a>
+</details>
+<details class="side-module">
+  <summary><span class="num">20</span><span class="side-check" data-slug="sql"></span> Python + SQL</summary>
+  <a href="../sql/">Python + SQL</a>
+</details>
+  <button id="reset-progress-btn" class="btn btn-ghost btn-sm" type="button" style="margin-top:1rem;width:100%;">Reset progress</button>
+</aside>
+<main class="main" id="main-content">
+
+<div class="paper">
+  <nav class="breadcrumb"><a href="../index.html">Home</a> / <a href="../roadmap/">Course</a> / Functional Programming &amp; Advanced Functions</nav>
+  <div class="badge-row"><span class="badge intermediate">Intermediate</span> <span class="badge time">45 min</span></div>
+  <h1>Module 11 — Functional Programming &amp; Advanced Functions</h1>
+  <p style="font-size:1.05rem;color:var(--ink-soft);max-width:62ch;">Lambda expressions, map/filter, and treating functions as ordinary values.</p>
+  <p class="note">Prerequisite: Module 09 — Sets & Comprehensions</p>
+
+  <div class="objectives"><h3>After this lesson, you will be able to</h3><ul><li>Write small anonymous functions with lambda</li><li>Transform and filter sequences with map() and filter()</li><li>Pair up sequences with zip() and track positions with enumerate()</li><li>Use any() and all() and a custom sort key</li></ul></div>
+
+  <h2 id="concept">Concept &amp; Syntax</h2>
+  
+<p>In Python, functions are values — you can store one in a variable, pass it into another function, or return
+it from a function, exactly like a number or a string. <strong>Functional programming</strong> leans into that:
+instead of writing a loop to transform every item in a list, you hand a small function to a tool like
+<code>map()</code> and let it apply that function everywhere.</p>
+<p><code>lambda</code> lets you write a tiny, unnamed function inline, for exactly the situations where defining
+a whole separate function with <code>def</code> would be overkill.</p>
+
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-25687"><code>double = <span class="kw">lambda</span> x: x * <span class="num">2</span>
+list(map(double, numbers))
+list(filter(<span class="kw">lambda</span> x: x &gt; <span class="num">0</span>, numbers))</code></pre></div>
+
+  <h2 id="examples">Examples</h2>
+  <h3>lambda basics <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">lambda basics</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-88323"><code>square = <span class="kw">lambda</span> x: x * x
+<span class="kw">print</span>(square(<span class="num">5</span>))</code></pre><div class="cb-output"><span class="out-label">Output</span>25</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">square = lambda x: x * x
+print(square(5))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>lambda x: x * x is an unnamed function equivalent to def square(x): return x * x — assigned to a name here for clarity.</p><h3>map() <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">map()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-5514"><code>numbers = [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>]
+doubled = list(map(<span class="kw">lambda</span> x: x * <span class="num">2</span>, numbers))
+<span class="kw">print</span>(doubled)</code></pre><div class="cb-output"><span class="out-label">Output</span>[2, 4, 6, 8]</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">numbers = [1, 2, 3, 4]
+doubled = list(map(lambda x: x * 2, numbers))
+print(doubled)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>map(function, iterable) applies function to every item and returns an iterator, which list() turns into a real list.</p><h3>filter() <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">filter()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2582"><code>numbers = [<span class="num">1</span>, -<span class="num">2</span>, <span class="num">3</span>, -<span class="num">4</span>, <span class="num">5</span>]
+positives = list(filter(<span class="kw">lambda</span> x: x &gt; <span class="num">0</span>, numbers))
+<span class="kw">print</span>(positives)</code></pre><div class="cb-output"><span class="out-label">Output</span>[1, 3, 5]</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">numbers = [1, -2, 3, -4, 5]
+positives = list(filter(lambda x: x &gt; 0, numbers))
+print(positives)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>filter(function, iterable) keeps only the items where function returns True.</p><h3>enumerate() and zip() <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">enumerate() and zip()</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-45397"><code>names = [<span class="str">&quot;Ada&quot;</span>, <span class="str">&quot;Sam&quot;</span>, <span class="str">&quot;Lee&quot;</span>]
+scores = [<span class="num">92</span>, <span class="num">85</span>, <span class="num">78</span>]
+<span class="kw">for</span> i, name <span class="kw">in</span> enumerate(names, start=<span class="num">1</span>):
+    <span class="kw">print</span>(i, name)
+<span class="kw">for</span> name, score <span class="kw">in</span> zip(names, scores):
+    <span class="kw">print</span>(f<span class="str">&quot;{name}: {score}&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>1 Ada
+2 Sam
+3 Lee
+Ada: 92
+Sam: 85
+Lee: 78</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">names = [&quot;Ada&quot;, &quot;Sam&quot;, &quot;Lee&quot;]
+scores = [92, 85, 78]
+for i, name in enumerate(names, start=1):
+    print(i, name)
+for name, score in zip(names, scores):
+    print(f&quot;{name}: {score}&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>enumerate() pairs each item with its position; zip() walks two (or more) sequences together, item by item.</p><h3>any(), all(), and sorted with a key <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">any(), all(), and sorted with a key</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-58910"><code>scores = [<span class="num">55</span>, <span class="num">82</span>, <span class="num">40</span>, <span class="num">91</span>]
+<span class="kw">print</span>(any(s &gt; <span class="num">90</span> <span class="kw">for</span> s <span class="kw">in</span> scores))
+<span class="kw">print</span>(all(s &gt; <span class="num">30</span> <span class="kw">for</span> s <span class="kw">in</span> scores))
+<span class="kw">print</span>(sorted(scores, key=<span class="kw">lambda</span> s: -s))</code></pre><div class="cb-output"><span class="out-label">Output</span>True
+True
+[91, 82, 55, 40]</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">scores = [55, 82, 40, 91]
+print(any(s &gt; 90 for s in scores))
+print(all(s &gt; 30 for s in scores))
+print(sorted(scores, key=lambda s: -s))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>any() is True if at least one item satisfies the condition; all() requires every item to. sorted(..., key=...) controls the sort order using a custom rule.</p>
+
+  <h2>Visual Explanation</h2>
+  <figure class="diagram"><svg viewBox="0 0 460 176" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comprehension mapping map(lambda x: x*2, ...)"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" style="fill:var(--ink-faint)"/></marker></defs><text x="230" y="20" text-anchor="middle" style="fill:var(--rule);font-family:var(--font-mono);font-size:13px;font-weight:700">map(lambda x: x*2, ...)</text><rect x="70" y="32" width="70" height="26" rx="5" style="fill:var(--surface);stroke:var(--border);stroke-width:1.4"/><text x="105" y="50" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:13px">1</text><line x1="140" y1="45" x2="320" y2="45" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="320" y="32" width="70" height="26" rx="5" style="fill:var(--success-bg);stroke:var(--accent-2);stroke-width:1.4"/><text x="355" y="50" text-anchor="middle" style="fill:var(--accent-2);font-family:var(--font-mono);font-size:13px;font-weight:700">2</text><rect x="70" y="66" width="70" height="26" rx="5" style="fill:var(--surface);stroke:var(--border);stroke-width:1.4"/><text x="105" y="84" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:13px">2</text><line x1="140" y1="79" x2="320" y2="79" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="320" y="66" width="70" height="26" rx="5" style="fill:var(--success-bg);stroke:var(--accent-2);stroke-width:1.4"/><text x="355" y="84" text-anchor="middle" style="fill:var(--accent-2);font-family:var(--font-mono);font-size:13px;font-weight:700">4</text><rect x="70" y="100" width="70" height="26" rx="5" style="fill:var(--surface);stroke:var(--border);stroke-width:1.4"/><text x="105" y="118" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:13px">3</text><line x1="140" y1="113" x2="320" y2="113" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="320" y="100" width="70" height="26" rx="5" style="fill:var(--success-bg);stroke:var(--accent-2);stroke-width:1.4"/><text x="355" y="118" text-anchor="middle" style="fill:var(--accent-2);font-family:var(--font-mono);font-size:13px;font-weight:700">6</text><rect x="70" y="134" width="70" height="26" rx="5" style="fill:var(--surface);stroke:var(--border);stroke-width:1.4"/><text x="105" y="152" text-anchor="middle" style="fill:var(--ink);font-family:var(--font-mono);font-size:13px">4</text><line x1="140" y1="147" x2="320" y2="147" style="stroke:var(--ink-faint);stroke-width:1.5" marker-end="url(#arrow)"/><rect x="320" y="134" width="70" height="26" rx="5" style="fill:var(--success-bg);stroke:var(--accent-2);stroke-width:1.4"/><text x="355" y="152" text-anchor="middle" style="fill:var(--accent-2);font-family:var(--font-mono);font-size:13px;font-weight:700">8</text></svg><figcaption>map() and filter() both walk through a sequence applying a small function to each item.</figcaption></figure>
+
+  <details class="disclosure"><summary>💡 Why does this work?</summary><div class="disclosure-body"><p>Read the concept explanation above again slowly, line by line — every keyword there maps directly onto a line of code in the examples. If it still doesn't click, re-run the traced example (if this lesson has one) one step at a time.</p></div></details>
+
+  <details class="disclosure"><summary>🔍 What happens internally? (advanced)</summary><div class="disclosure-body"><p>Under the hood, Python compiles your source into bytecode and runs it on a virtual machine (the CPython interpreter). Variables are names in a namespace dictionary pointing at objects in memory — which is exactly what the memory panel in the tracer above is showing you.</p></div></details>
+
+  
+
+  <h2 id="mistakes">Common Mistakes</h2>
+  
+<div class="callout callout-mistake">
+  <div class="callout-head">✗ Common mistake 1</div>
+  <p>map() and filter() return lazy iterators in Python 3, not lists — printing one directly shows a memory reference, not the values.</p>
+  <div class="mistake-pair">
+    <div class="mp-bad">
+      <div class="mp-label">✗ Avoid this</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints something like &lt;map object at 0x...&gt; instead of the values</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-71619"><code>result = map(<span class="kw">lambda</span> x: x*<span class="num">2</span>, [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>])
+<span class="kw">print</span>(result)</code></pre></div>
+    </div>
+    <div class="mp-good">
+      <div class="mp-label">✓ Better approach</div>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-95571"><code>result = list(map(<span class="kw">lambda</span> x: x*<span class="num">2</span>, [<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>]))
+<span class="kw">print</span>(result)</code></pre></div>
+    </div>
+  </div>
+</div>
+
+  <div class="callout callout-tip"><div class="callout-head">✓ Best practices</div><ul><li>Prefer a list comprehension over map()/filter() when it reads more clearly — both approaches are valid and idiomatic Python.</li><li>Keep lambdas to one simple expression; use a regular def function if the logic grows.</li><li>Wrap map()/filter() results in list() (or tuple()/set()) when you need to use them more than once.</li></ul></div>
+
+  <h2 id="exercise">Exercise &amp; Challenge</h2>
+  
+<div class="exercise-box" data-answer="[10, 20]" data-explain="Only 10 and 20 are evenly divisible by 10, so n % 10 == 0 is True only for those.">
+  <p><strong>Exercise 1 — Predict the output</strong></p>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15610"><code>nums = [<span class="num">10</span>, <span class="num">15</span>, <span class="num">20</span>, <span class="num">25</span>]
+result = list(filter(<span class="kw">lambda</span> n: n % <span class="num">10</span> == <span class="num">0</span>, nums))
+<span class="kw">print</span>(result)</code></pre></div>
+  <p>What does this print?</p>
+  <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
+  <div class="tracer-controls">
+    <button class="btn btn-primary btn-sm ex-check" type="button">Check answer</button>
+    <button class="btn btn-ghost btn-sm ex-hint-btn" type="button">Hint</button>
+    <button class="btn btn-ghost btn-sm ex-sol-btn" type="button">Show solution</button>
+  </div>
+  <div class="ex-feedback"></div>
+  <div class="ex-hint" style="display:none;margin-top:.6rem;color:var(--ink-soft);font-size:.88rem;">💡 filter keeps values where the lambda returns True.</div>
+  <div class="ex-sol" style="display:none;margin-top:.6rem;"><p>[10, 20]</p></div>
+</div>
+  
+<div class="exercise-box" style="border-color:var(--rule);">
+  <p><strong>🏆 Challenge</strong></p>
+  <p>Given a list of dictionaries representing products (each with &#x27;name&#x27; and &#x27;price&#x27;), use sorted() with a lambda key to print them from cheapest to most expensive.</p>
+  <ul><li>Use sorted() with key=lambda</li><li>Sort by the &#x27;price&#x27; field</li><li>Print each product&#x27;s name and price on its own line</li></ul>
+  <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>key=lambda p: p[&quot;price&quot;]</p></div></details>
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94607"><code>products = [{<span class="str">&quot;name&quot;</span>: <span class="str">&quot;Mouse&quot;</span>, <span class="str">&quot;price&quot;</span>: <span class="num">25</span>}, {<span class="str">&quot;name&quot;</span>: <span class="str">&quot;Keyboard&quot;</span>, <span class="str">&quot;price&quot;</span>: <span class="num">60</span>}, {<span class="str">&quot;name&quot;</span>: <span class="str">&quot;Cable&quot;</span>, <span class="str">&quot;price&quot;</span>: <span class="num">8</span>}]
+<span class="kw">for</span> p <span class="kw">in</span> sorted(products, key=<span class="kw">lambda</span> p: p[<span class="str">&quot;price&quot;</span>]):
+    <span class="kw">print</span>(p[<span class="str">&quot;name&quot;</span>], p[<span class="str">&quot;price&quot;</span>])</code></pre></div></div></details>
+</div>
+
+  <h2 id="quiz">Quiz</h2>
+  <p>Answer every question, then submit to see your score and explanations.</p>
+  
+<div class="quiz" id="quiz-functional-programming">
+  
+<div class="quiz-q" data-correct="1" id="quiz-functional-programming-q0">
+  <p class="qtext">1. What does lambda x: x * 2 create?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">A variable</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">A small anonymous function</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">A list comprehension</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">A loop</div>
+  <div class="quiz-explain">lambda defines a small, unnamed, inline function.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-functional-programming-q1">
+  <p class="qtext">2. What does filter() keep from a sequence?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">Every item</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Only items where the function returns True</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">Only the first item</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">Only duplicates</div>
+  <div class="quiz-explain">filter() keeps items that pass the given test function.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-functional-programming-q2">
+  <p class="qtext">3. What does zip(names, scores) produce?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">A single merged list</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">Pairs combining corresponding items from each sequence</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">A dictionary</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">An error if lengths differ</div>
+  <div class="quiz-explain">zip() pairs items positionally from each iterable it&#x27;s given.</div>
+</div>
+<div class="quiz-q" data-correct="1" id="quiz-functional-programming-q3">
+  <p class="qtext">4. Why must you often wrap map() in list()?</p>
+  <div class="quiz-opt" role="button" tabindex="0" data-idx="0">map() returns a string</div><div class="quiz-opt" role="button" tabindex="0" data-idx="1">map() returns a lazy iterator, not a list</div><div class="quiz-opt" role="button" tabindex="0" data-idx="2">It&#x27;s required syntax</div><div class="quiz-opt" role="button" tabindex="0" data-idx="3">It isn&#x27;t necessary at all</div>
+  <div class="quiz-explain">map() and filter() are lazy — list() forces them to produce their values.</div>
+</div>
+  <div class="tracer-controls">
+    <button class="btn btn-primary quiz-submit" type="button">Submit answers</button>
+    <button class="btn btn-ghost quiz-retry" type="button" style="display:none;">Retry quiz</button>
+  </div>
+  <div class="quiz-score" style="display:none;"></div>
+</div>
+
+  <h2>Summary</h2>
+  <ul><li>Functions are values in Python — they can be passed around like any other data.</li><li>lambda creates small, unnamed functions for one-off use.</li><li>map() transforms every item; filter() keeps only matching items.</li><li>enumerate(), zip(), any(), and all() are common companions when working with sequences.</li></ul>
+
+  <h2>Related lessons</h2><div class="related-list"><a href="../sets-comprehensions/">Sets &amp; Comprehensions</a><a href="../closures-decorators/">Closures &amp; Decorators</a><a href="../generators/">Generators</a></div>
+
+  
+<div class="mark-complete-row">
+  <button id="mark-complete-btn" class="btn btn-primary" type="button" aria-live="polite">Mark this lesson complete</button>
+  <span style="color:var(--ink-faint);font-size:.85rem;">Saved privately in your browser — no account needed.</span>
+</div>
+</div>
+<nav class="lesson-nav" aria-label="Lesson navigation"><a href="../args-kwargs/"><div class="dir">← Previous</div><div>10 — *args and **kwargs</div></a><a class="next" href="../closures-decorators/"><div class="dir">Next →</div><div>12 — Closures &amp; Decorators</div></a></nav>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="../index.html" style="margin-bottom:.6rem;"><span class="mark">Py</span>Complete Python Course</a>
+      <p style="color:var(--ink-soft);font-size:.88rem;max-width:32ch;">Built for learners who want to truly understand Python — free, open, and self-paced.</p>
+    </div>
+    <div><h4>Learn</h4><a href="../roadmap/">Course roadmap</a><a href="../exercises/">Exercises</a><a href="../projects/">Projects</a><a href="../playground/">Playground</a></div><div><h4>Reference</h4><a href="../cheatsheets/">Cheatsheets</a><a href="../glossary/">Glossary</a><a href="../faq/">FAQ</a></div><div><h4>Modules</h4><a href="../introduction/">01 Introduction</a><a href="../oop/">14 OOP</a><a href="../sql/">20 Python + SQL</a></div><div><h4>Site</h4><a href="../about/">About</a><a href="../sitemap.xml">Sitemap</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Complete Python Course. Content free to learn from. No account required — your progress stays in your browser.</div>
+</footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>
