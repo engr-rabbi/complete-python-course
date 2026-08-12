@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GUI Programming with Tkinter | Complete Python Course</title>
 <meta name="description" content="Building your first windowed, clickable desktop application.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/tkinter/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/tkinter/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="GUI Programming with Tkinter | Complete Python Course">
 <meta property="og:description" content="Building your first windowed, clickable desktop application.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/tkinter/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/tkinter/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="GUI Programming with Tkinter | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "GUI Programming with Tkinter", "description": "Building your first windowed, clickable desktop application.", "educationalLevel": "Intermediate", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "GUI Programming with Tkinter", "item": "https://github.com/engr-rabbi/complete-python-course/tkinter/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "GUI Programming with Tkinter", "item": "https://engr-rabbi.github.io/complete-python-course/tkinter/"}]}</script>
 </head>
 <body data-root="../" data-slug="tkinter">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -147,7 +147,7 @@ in response to specific events, like a button click.</p>
 <p><code>tkinter</code> is Python's built-in GUI toolkit — no extra installation required — making it the
 natural starting point for desktop app development.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-77964"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79782"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 &nbsp;
 root = tk.Tk()
 label = tk.Label(root, text=<span class="str">&quot;Hello&quot;</span>)
@@ -155,7 +155,7 @@ label.pack()
 root.mainloop()</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Your first window <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first window</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-1911"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+  <h3>Your first window <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first window</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-13318"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 &nbsp;
 root = tk.Tk()
 root.title(<span class="str">&quot;My First App&quot;</span>)
@@ -167,7 +167,7 @@ root = tk.Tk()
 root.title(&quot;My First App&quot;)
 label = tk.Label(root, text=&quot;Hello, Tkinter!&quot;)
 label.pack(padx=20, pady=20)
-root.mainloop()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Tk() creates the main window; .pack() places a widget inside it; mainloop() starts the event loop that keeps the window open and responsive.</p><h3>A button with a callback <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A button with a callback</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-88720"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+root.mainloop()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Tk() creates the main window; .pack() places a widget inside it; mainloop() starts the event loop that keeps the window open and responsive.</p><h3>A button with a callback <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A button with a callback</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94328"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 &nbsp;
 <span class="kw">def</span> on_click():
     label.config(text=<span class="str">&quot;Button was clicked!&quot;</span>)
@@ -187,7 +187,7 @@ label = tk.Label(root, text=&quot;Waiting...&quot;)
 label.pack(pady=10)
 button = tk.Button(root, text=&quot;Click me&quot;, command=on_click)
 button.pack(pady=10)
-root.mainloop()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>command=on_click registers on_click as the callback — it runs automatically whenever the button is clicked. This is event-driven programming in action.</p><h3>Reading an Entry field <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Reading an Entry field</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-44694"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+root.mainloop()</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>command=on_click registers on_click as the callback — it runs automatically whenever the button is clicked. This is event-driven programming in action.</p><h3>Reading an Entry field <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Reading an Entry field</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-64808"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 &nbsp;
 <span class="kw">def</span> greet():
     name = entry.get()
@@ -230,7 +230,7 @@ root.mainloop()</textarea><div class="tracer-controls"><button class="btn btn-pr
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises the script runs and exits instantly — no window stays visible</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-53191"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises the script runs and exits instantly — no window stays visible</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93063"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 root = tk.Tk()
 label = tk.Label(root, text=<span class="str">&quot;Hi&quot;</span>)
 label.pack()
@@ -238,7 +238,7 @@ label.pack()
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55163"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-5350"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 root = tk.Tk()
 label = tk.Label(root, text=<span class="str">&quot;Hi&quot;</span>)
 label.pack()
@@ -271,7 +271,7 @@ root.mainloop()</code></pre></div>
   <p>Build a tiny Tkinter app with an Entry field and a button that shows a message box (using tkinter.messagebox) confirming whatever the user typed.</p>
   <ul><li>Use an Entry widget to collect text</li><li>Use tkinter.messagebox.showinfo() to display it</li><li>Give the window a title</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>from tkinter import messagebox, then messagebox.showinfo(&quot;Title&quot;, f&quot;You typed: {text}&quot;)</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-754"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93078"><code><span class="kw">import</span> tkinter <span class="kw">as</span> tk
 <span class="kw">from</span> tkinter <span class="kw">import</span> messagebox
 &nbsp;
 <span class="kw">def</span> show_message():

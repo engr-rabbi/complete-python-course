@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Complete Python Course</title>
 <meta name="description" content="Learn Python from zero to advanced with interactive examples, visual code execution, exercises, quizzes, and real-world projects. Free and self-paced.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Complete Python Course">
 <meta property="og:description" content="Learn Python from zero to advanced with interactive examples, visual code execution, exercises, quizzes, and real-world projects. Free and self-paced.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Complete Python Course">
@@ -17,7 +17,7 @@
 <meta name="theme-color" content="#B65C38">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Complete Python Course", "url": "https://github.com/engr-rabbi/complete-python-course/", "potentialAction": {"@type": "SearchAction", "target": "https://github.com/engr-rabbi/complete-python-course/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Complete Python Course", "url": "https://engr-rabbi.github.io/complete-python-course/", "potentialAction": {"@type": "SearchAction", "target": "https://engr-rabbi.github.io/complete-python-course/?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Complete Python Course", "description": "A complete, free, interactive Python course from beginner to advanced level.", "provider": {"@type": "Organization", "name": "Complete Python Course"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need any experience to start this course?", "acceptedAnswer": {"@type": "Answer", "text": "None at all. Module 01 assumes you've never written a line of code before."}}, {"@type": "Question", "name": "Do I need to install anything to try the examples?", "acceptedAnswer": {"@type": "Answer", "text": "Most examples include a live, browser-based runner (powered by Pyodide) so you can experiment with no installation. Module 01 also walks through installing Python and VS Code for when you're ready to work locally."}}, {"@type": "Question", "name": "Is my progress saved if I close the tab?", "acceptedAnswer": {"@type": "Answer", "text": "Yes \u2014 lesson completion and quiz activity are saved directly in your browser's local storage. Nothing is sent to a server, and no account is required."}}, {"@type": "Question", "name": "Is this course free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, entirely \u2014 it's designed to be a free, open, self-paced Python academy."}}, {"@type": "Question", "name": "What Python version does this course use?", "acceptedAnswer": {"@type": "Answer", "text": "Python 3 throughout. Python 2 reached end-of-life in January 2020 and isn't covered."}}, {"@type": "Question", "name": "Can I suggest a topic or report an error?", "acceptedAnswer": {"@type": "Answer", "text": "This is a static, open codebase \u2014 see the About page for how the content and source are organized."}}]}</script>
 </head>
@@ -28,7 +28,7 @@
 <header class="topbar">
   <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Open course menu" aria-controls="course-sidebar">☰</button>
   <a class="brand" href="index.html"><span class="mark">Py</span>Complete Python Course</a>
-  <nav class="topnav" aria-label="Main"><a href="" aria-current="page">Home</a><a href="roadmap/">Course</a><a href="playground/">Playground</a><a href="exercises/">Exercises</a><a href="projects/">Projects</a><a href="cheatsheets/">Cheatsheets</a><a href="about/">About</a></nav>
+  <nav class="topnav" aria-label="Main"><a href="" aria-current="page">Home</a><a href="roadmap/">Course</a><a href="playground/">Playground</a><a href="exercises/">Exercises</a><a href="projects/">Projects</a><a href="cheatsheets/">Cheatsheets</a><a href="glossary/">Glossary</a><a href="about/">About</a></nav>
   <div class="topbar-spacer"></div>
   <div id="search-box" role="search">
     <input id="search-input" type="search" placeholder="Search lessons… ( / )" aria-label="Search the course">
@@ -43,6 +43,7 @@
     <div class="label"><span>Course progress</span><span data-progress-pct>0%</span></div>
     <div class="progress-track"><div class="progress-fill" data-progress-fill style="width:0%"></div></div>
   </div>
+  <div style="margin-bottom:1rem;"><a href="" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Home</a><a href="roadmap/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Roadmap</a><a href="playground/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Playground</a><a href="exercises/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Exercises</a><a href="projects/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Projects</a><a href="cheatsheets/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Cheatsheets</a><a href="glossary/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">Glossary</a><a href="about/" style="display:block;padding:.3rem .5rem;border-radius:6px;text-decoration:none;color:var(--ink-soft);font-size:.85rem;">About</a></div>
   <div style="font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-faint);font-weight:700;padding:0 .5rem;margin-bottom:.4rem;">Course modules</div>
   
 <details class="side-module">

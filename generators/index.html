@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Generators | Complete Python Course</title>
 <meta name="description" content="Producing values one at a time, on demand, instead of all at once.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/generators/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/generators/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Generators | Complete Python Course">
 <meta property="og:description" content="Producing values one at a time, on demand, instead of all at once.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/generators/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/generators/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Generators | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Generators", "description": "Producing values one at a time, on demand, instead of all at once.", "educationalLevel": "Advanced", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Generators", "item": "https://github.com/engr-rabbi/complete-python-course/generators/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Generators", "item": "https://engr-rabbi.github.io/complete-python-course/generators/"}]}</script>
 </head>
 <body data-root="../" data-slug="generators">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -147,7 +147,7 @@ off, and only resuming when the next value is asked for. This is called <strong>
 generator that yields one million numbers only ever holds <em>one</em> number in memory at any moment — hugely
 useful when working with large or even infinite sequences.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43026"><code><span class="kw">def</span> count_up_to(n):
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-48125"><code><span class="kw">def</span> count_up_to(n):
     i = <span class="num">1</span>
     <span class="kw">while</span> i &lt;= n:
         <span class="kw">yield</span> i
@@ -157,7 +157,7 @@ useful when working with large or even infinite sequences.</p>
     <span class="kw">print</span>(number)</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>A simple generator function <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A simple generator function</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43026"><code><span class="kw">def</span> count_up_to(n):
+  <h3>A simple generator function <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">A simple generator function</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-48125"><code><span class="kw">def</span> count_up_to(n):
     i = <span class="num">1</span>
     <span class="kw">while</span> i &lt;= n:
         <span class="kw">yield</span> i
@@ -175,7 +175,7 @@ useful when working with large or even infinite sequences.</p>
         i += 1
 
 for number in count_up_to(5):
-    print(number)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each time the loop asks for the next value, the function resumes right after its last yield, runs a bit more, then pauses again.</p><h3>Calling next() manually <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Calling next() manually</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-28248"><code><span class="kw">def</span> two_numbers():
+    print(number)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each time the loop asks for the next value, the function resumes right after its last yield, runs a bit more, then pauses again.</p><h3>Calling next() manually <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Calling next() manually</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-91338"><code><span class="kw">def</span> two_numbers():
     <span class="kw">yield</span> <span class="num">10</span>
     <span class="kw">yield</span> <span class="num">20</span>
 &nbsp;
@@ -188,7 +188,7 @@ gen = two_numbers()
 
 gen = two_numbers()
 print(next(gen))
-print(next(gen))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>next() pulls the next yielded value out of the generator. Calling it a third time here would raise StopIteration.</p><h3>Generator comprehension <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Generator comprehension</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-22001"><code>squares = (x * x <span class="kw">for</span> x <span class="kw">in</span> range(<span class="num">1000000</span>))
+print(next(gen))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>next() pulls the next yielded value out of the generator. Calling it a third time here would raise StopIteration.</p><h3>Generator comprehension <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Generator comprehension</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2639"><code>squares = (x * x <span class="kw">for</span> x <span class="kw">in</span> range(<span class="num">1000000</span>))
 <span class="kw">print</span>(next(squares))
 <span class="kw">print</span>(next(squares))</code></pre><div class="cb-output"><span class="out-label">Output</span>0
 1</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">squares = (x * x for x in range(1000000))
@@ -212,7 +212,7 @@ print(next(squares))</textarea><div class="tracer-controls"><button class="btn b
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints something like &lt;generator object numbers at 0x...&gt;, not 1 or 2</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-23469"><code><span class="kw">def</span> numbers():
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints something like &lt;generator object numbers at 0x...&gt;, not 1 or 2</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94141"><code><span class="kw">def</span> numbers():
     <span class="kw">yield</span> <span class="num">1</span>
     <span class="kw">yield</span> <span class="num">2</span>
 &nbsp;
@@ -220,7 +220,7 @@ print(next(squares))</textarea><div class="tracer-controls"><button class="btn b
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-64221"><code><span class="kw">def</span> numbers():
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-40665"><code><span class="kw">def</span> numbers():
     <span class="kw">yield</span> <span class="num">1</span>
     <span class="kw">yield</span> <span class="num">2</span>
 &nbsp;
@@ -236,7 +236,7 @@ print(next(squares))</textarea><div class="tracer-controls"><button class="btn b
   
 <div class="exercise-box" data-answer="b" data-explain="The first next(g) advances past &#x27;a&#x27; without printing it; the second next(g) returns &#x27;b&#x27;, which gets printed.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-97937"><code><span class="kw">def</span> letters():
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-17961"><code><span class="kw">def</span> letters():
     <span class="kw">yield</span> <span class="str">&quot;a&quot;</span>
     <span class="kw">yield</span> <span class="str">&quot;b&quot;</span>
 &nbsp;
@@ -260,7 +260,7 @@ next(g)
   <p>Write a generator function even_numbers(limit) that yields even numbers from 0 up to (not including) limit, then use it in a for loop to print them.</p>
   <ul><li>Use yield, not return</li><li>Only yield even numbers</li><li>Stop before reaching limit</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>A while loop with i += 2 naturally produces only even numbers if it starts at 0.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-96578"><code><span class="kw">def</span> even_numbers(limit):
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-31923"><code><span class="kw">def</span> even_numbers(limit):
     i = <span class="num">0</span>
     <span class="kw">while</span> i &lt; limit:
         <span class="kw">yield</span> i

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Object-Oriented Programming | Complete Python Course</title>
 <meta name="description" content="Modeling real things as classes and objects — the backbone of large Python programs.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/oop/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/oop/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Object-Oriented Programming | Complete Python Course">
 <meta property="og:description" content="Modeling real things as classes and objects — the backbone of large Python programs.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/oop/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/oop/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Object-Oriented Programming | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Object-Oriented Programming", "description": "Modeling real things as classes and objects \u2014 the backbone of large Python programs.", "educationalLevel": "Advanced", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Object-Oriented Programming", "item": "https://github.com/engr-rabbi/complete-python-course/oop/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Object-Oriented Programming", "item": "https://engr-rabbi.github.io/complete-python-course/oop/"}]}</script>
 </head>
 <body data-root="../" data-slug="oop">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -148,7 +148,7 @@ object shares the same blueprint, but each has its own name, age, and so on.</p>
 first parameter of an instance method, and Python passes it automatically — you never supply it yourself when
 calling the method.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90623"><code><span class="kw">class</span> ClassName:
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-67529"><code><span class="kw">class</span> ClassName:
     <span class="kw">def</span> __init__(<span class="kw">self</span>, attribute):
         <span class="kw">self</span>.attribute = attribute
 &nbsp;
@@ -158,7 +158,7 @@ calling the method.</p>
 obj = ClassName(<span class="str">&quot;value&quot;</span>)</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Your first class <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first class</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-98173"><code><span class="kw">class</span> Dog:
+  <h3>Your first class <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Your first class</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-20217"><code><span class="kw">class</span> Dog:
     <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
         <span class="kw">self</span>.name = name
 &nbsp;
@@ -174,14 +174,14 @@ rex = Dog(<span class="str">&quot;Rex&quot;</span>)
         return self.name + &quot; says Woof!&quot;
 
 rex = Dog(&quot;Rex&quot;)
-print(rex.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>__init__ runs automatically when Dog("Rex") is called, storing "Rex" as this object's name attribute.</p><h3>Multiple objects, independent state <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Multiple objects, independent state</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93506"><code>rex = Dog(<span class="str">&quot;Rex&quot;</span>)
+print(rex.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>__init__ runs automatically when Dog("Rex") is called, storing "Rex" as this object's name attribute.</p><h3>Multiple objects, independent state <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Multiple objects, independent state</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-69416"><code>rex = Dog(<span class="str">&quot;Rex&quot;</span>)
 fido = Dog(<span class="str">&quot;Fido&quot;</span>)
 <span class="kw">print</span>(rex.bark())
 <span class="kw">print</span>(fido.bark())</code></pre><div class="cb-output"><span class="out-label">Output</span>Rex says Woof!
 Fido says Woof!</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">rex = Dog(&quot;Rex&quot;)
 fido = Dog(&quot;Fido&quot;)
 print(rex.bark())
-print(fido.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each object keeps its own separate copy of name — that's what 'instance' variables means.</p><h3>Class variables vs instance variables <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Class variables vs instance variables</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-69308"><code><span class="kw">class</span> Dog:
+print(fido.bark())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Each object keeps its own separate copy of name — that's what 'instance' variables means.</p><h3>Class variables vs instance variables <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Class variables vs instance variables</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-82278"><code><span class="kw">class</span> Dog:
     species = <span class="str">&quot;Canis familiaris&quot;</span>  <span class="cm"># class variable — shared by all dogs</span>
 &nbsp;
     <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
@@ -200,7 +200,7 @@ Rex Fido</div><div data-runner class="runner"><textarea class="run-editor" spell
 rex = Dog(&quot;Rex&quot;)
 fido = Dog(&quot;Fido&quot;)
 print(rex.species, fido.species)
-print(rex.name, fido.name)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>species is defined once on the class and shared by every instance; name is set per-object inside __init__.</p><h3>Inheritance <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Inheritance</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-18127"><code><span class="kw">class</span> Animal:
+print(rex.name, fido.name)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>species is defined once on the class and shared by every instance; name is set per-object inside __init__.</p><h3>Inheritance <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Inheritance</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-17595"><code><span class="kw">class</span> Animal:
     <span class="kw">def</span> __init__(<span class="kw">self</span>, name):
         <span class="kw">self</span>.name = name
     <span class="kw">def</span> speak(<span class="kw">self</span>):
@@ -222,7 +222,7 @@ class Dog(Animal):
         return f&quot;{self.name} barks.&quot;
 
 rex = Dog(&quot;Rex&quot;)
-print(rex.speak())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>class Dog(Animal) means Dog inherits everything from Animal, then overrides speak() with its own version — this is called method overriding.</p><h3>@property and __str__ <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">@property and __str__</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15492"><code><span class="kw">class</span> Circle:
+print(rex.speak())</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>class Dog(Animal) means Dog inherits everything from Animal, then overrides speak() with its own version — this is called method overriding.</p><h3>@property and __str__ <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">@property and __str__</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-44829"><code><span class="kw">class</span> Circle:
     <span class="kw">def</span> __init__(<span class="kw">self</span>, radius):
         <span class="kw">self</span>.radius = radius
 &nbsp;
@@ -308,7 +308,7 @@ print(c.area)</textarea><div class="tracer-controls"><button class="btn btn-prim
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: bark() takes 0 positional arguments but 1 was given</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-80753"><code><span class="kw">class</span> Dog:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: bark() takes 0 positional arguments but 1 was given</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-82746"><code><span class="kw">class</span> Dog:
     <span class="kw">def</span> bark():
         <span class="kw">return</span> <span class="str">&quot;Woof!&quot;</span>
 &nbsp;
@@ -317,7 +317,7 @@ rex.bark()</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-83986"><code><span class="kw">class</span> Dog:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-53554"><code><span class="kw">class</span> Dog:
     <span class="kw">def</span> bark(<span class="kw">self</span>):
         <span class="kw">return</span> <span class="str">&quot;Woof!&quot;</span>
 &nbsp;
@@ -332,7 +332,7 @@ rex.bark()</code></pre></div>
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but every Cart object ends up sharing the same items list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16127"><code><span class="kw">class</span> Cart:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but every Cart object ends up sharing the same items list</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-65327"><code><span class="kw">class</span> Cart:
     items = []  <span class="cm"># class variable — shared by ALL carts!</span>
 &nbsp;
     <span class="kw">def</span> add(<span class="kw">self</span>, item):
@@ -340,7 +340,7 @@ rex.bark()</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-86380"><code><span class="kw">class</span> Cart:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-57897"><code><span class="kw">class</span> Cart:
     <span class="kw">def</span> __init__(<span class="kw">self</span>):
         <span class="kw">self</span>.items = []  <span class="cm"># instance variable — one per cart</span>
 &nbsp;
@@ -356,7 +356,7 @@ rex.bark()</code></pre></div>
   
 <div class="exercise-box" data-answer="3" data-explain="Cat(&quot;Whiskers&quot;, 3) sets self.name to &quot;Whiskers&quot; and self.age to 3.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75933"><code><span class="kw">class</span> Cat:
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15270"><code><span class="kw">class</span> Cat:
     <span class="kw">def</span> __init__(<span class="kw">self</span>, name, age):
         <span class="kw">self</span>.name = name
         <span class="kw">self</span>.age = age
@@ -380,7 +380,7 @@ whiskers = Cat(<span class="str">&quot;Whiskers&quot;</span>, <span class="num">
   <p>Model a BankAccount class with a balance, a deposit(amount) method, and a withdraw(amount) method that refuses to overdraw the account.</p>
   <ul><li>Store balance as an instance variable, starting at 0</li><li>deposit() should increase balance</li><li>withdraw() should print an error message instead of allowing a negative balance</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>Check `if amount &gt; self.balance:` before subtracting inside withdraw().</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-28475"><code><span class="kw">class</span> BankAccount:
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-92076"><code><span class="kw">class</span> BankAccount:
     <span class="kw">def</span> __init__(<span class="kw">self</span>):
         <span class="kw">self</span>.balance = <span class="num">0</span>
 &nbsp;

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strings &amp; User Input | Complete Python Course</title>
 <meta name="description" content="Slicing, formatting, and reading what the user types.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/strings/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/strings/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Strings &amp; User Input | Complete Python Course">
 <meta property="og:description" content="Slicing, formatting, and reading what the user types.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/strings/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/strings/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Strings &amp; User Input | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Strings & User Input", "description": "Slicing, formatting, and reading what the user types.", "educationalLevel": "Beginner", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Strings & User Input", "item": "https://github.com/engr-rabbi/complete-python-course/strings/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Strings & User Input", "item": "https://engr-rabbi.github.io/complete-python-course/strings/"}]}</script>
 </head>
 <body data-root="../" data-slug="strings">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -147,26 +147,26 @@ once: if you ask for someone's age and plan to do math with it, you must convert
 <p>Strings in Python are also <strong>sequences</strong> — ordered collections of characters — which means every
 character has a numbered position (its <em>index</em>), starting at 0. That's what makes slicing possible.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90884"><code>name = input(<span class="str">&quot;Prompt: &quot;</span>)
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-14368"><code>name = input(<span class="str">&quot;Prompt: &quot;</span>)
 age = int(input(<span class="str">&quot;Age: &quot;</span>))
 greeting = f<span class="str">&quot;Hello, {name}!&quot;</span>
 first_three = name[<span class="num">0</span>:<span class="num">3</span>]</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Reading input <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Reading input</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-22244"><code>name = input(<span class="str">&quot;What is your name? &quot;</span>)
+  <h3>Reading input <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Reading input</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-61546"><code>name = input(<span class="str">&quot;What is your name? &quot;</span>)
 <span class="kw">print</span>(<span class="str">&quot;Hello, &quot;</span> + name + <span class="str">&quot;!&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>What is your name? (waits for typing) → Hello, Ada!</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">name = input(&quot;What is your name? &quot;)
-print(&quot;Hello, &quot; + name + &quot;!&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>input() always returns a string, even if the user types digits.</p><h3>Converting input to numbers <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Converting input to numbers</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-94972"><code>age = int(input(<span class="str">&quot;Age: &quot;</span>))
+print(&quot;Hello, &quot; + name + &quot;!&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>input() always returns a string, even if the user types digits.</p><h3>Converting input to numbers <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Converting input to numbers</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-23511"><code>age = int(input(<span class="str">&quot;Age: &quot;</span>))
 next_year = age + <span class="num">1</span>
 <span class="kw">print</span>(<span class="str">&quot;Next year you will be&quot;</span>, next_year)</code></pre><div class="cb-output"><span class="out-label">Output</span>Age: 25 → Next year you will be 26</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">age = int(input(&quot;Age: &quot;))
 next_year = age + 1
-print(&quot;Next year you will be&quot;, next_year)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>int() converts a numeric string like "25" into the integer 25. Without it, age + 1 would crash.</p><h3>f-strings <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">f-strings</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-90911"><code>name = <span class="str">&quot;Ada&quot;</span>
+print(&quot;Next year you will be&quot;, next_year)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>int() converts a numeric string like "25" into the integer 25. Without it, age + 1 would crash.</p><h3>f-strings <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">f-strings</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-40485"><code>name = <span class="str">&quot;Ada&quot;</span>
 score = <span class="num">97.5</span>
 <span class="kw">print</span>(f<span class="str">&quot;{name} scored {score}%&quot;</span>)
 <span class="kw">print</span>(f<span class="str">&quot;Rounded: {score:.0f}%&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>Ada scored 97.5%
 Rounded: 98%</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">name = &quot;Ada&quot;
 score = 97.5
 print(f&quot;{name} scored {score}%&quot;)
-print(f&quot;Rounded: {score:.0f}%&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>An f-string (prefix f) lets you embed variables directly inside {curly braces}, including format specifiers like <code>:.0f</code> for rounding.</p><h3>Indexing and slicing <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Indexing and slicing</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79536"><code>name = <span class="str">&quot;Python&quot;</span>
+print(f&quot;Rounded: {score:.0f}%&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>An f-string (prefix f) lets you embed variables directly inside {curly braces}, including format specifiers like <code>:.0f</code> for rounding.</p><h3>Indexing and slicing <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Indexing and slicing</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-3426"><code>name = <span class="str">&quot;Python&quot;</span>
 <span class="kw">print</span>(name[<span class="num">0</span>])
 <span class="kw">print</span>(name[-<span class="num">1</span>])
 <span class="kw">print</span>(name[<span class="num">1</span>:<span class="num">4</span>])
@@ -177,7 +177,7 @@ Pto</div><div data-runner class="runner"><textarea class="run-editor" spellcheck
 print(name[0])
 print(name[-1])
 print(name[1:4])
-print(name[::2])</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Index 0 is the first character, -1 is the last. <code>[1:4]</code> takes indices 1 up to (not including) 4. <code>[::2]</code> takes every 2nd character using a step.</p><h3>Useful string methods <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Useful string methods</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-14086"><code>raw = <span class="str">&quot;  ada@example.com  &quot;</span>
+print(name[::2])</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Index 0 is the first character, -1 is the last. <code>[1:4]</code> takes indices 1 up to (not including) 4. <code>[::2]</code> takes every 2nd character using a step.</p><h3>Useful string methods <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Useful string methods</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-91290"><code>raw = <span class="str">&quot;  ada@example.com  &quot;</span>
 clean = raw.strip()
 <span class="kw">print</span>(clean)
 <span class="kw">print</span>(clean.find(<span class="str">&quot;@&quot;</span>))
@@ -206,12 +206,12 @@ print(clean.replace(&quot;example&quot;, &quot;python&quot;))</textarea><div cla
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: can only concatenate str (not &quot;int&quot;) to str</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55507"><code>age = input(<span class="str">&quot;Age: &quot;</span>)
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: can only concatenate str (not &quot;int&quot;) to str</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-36110"><code>age = input(<span class="str">&quot;Age: &quot;</span>)
 <span class="kw">print</span>(age + <span class="num">5</span>)</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-78048"><code>age = int(input(<span class="str">&quot;Age: &quot;</span>))
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-65635"><code>age = int(input(<span class="str">&quot;Age: &quot;</span>))
 <span class="kw">print</span>(age + <span class="num">5</span>)</code></pre></div>
     </div>
   </div>
@@ -222,12 +222,12 @@ print(clean.replace(&quot;example&quot;, &quot;python&quot;))</textarea><div cla
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: &#x27;str&#x27; object does not support item assignment</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-36318"><code>name = <span class="str">&quot;python&quot;</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises TypeError: &#x27;str&#x27; object does not support item assignment</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-77229"><code>name = <span class="str">&quot;python&quot;</span>
 name[<span class="num">0</span>] = <span class="str">&quot;P&quot;</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-7991"><code>name = <span class="str">&quot;python&quot;</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93638"><code>name = <span class="str">&quot;python&quot;</span>
 name = <span class="str">&quot;P&quot;</span> + name[<span class="num">1</span>:]</code></pre></div>
     </div>
   </div>
@@ -239,7 +239,7 @@ name = <span class="str">&quot;P&quot;</span> + name[<span class="num">1</span>:
   
 <div class="exercise-box" data-answer="ndbo" data-explain="word[2:6] takes characters at index 2, 3, 4, 5 — n, d, b, o.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-15366"><code>word = <span class="str">&quot;handbook&quot;</span>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68030"><code>word = <span class="str">&quot;handbook&quot;</span>
 <span class="kw">print</span>(word[<span class="num">2</span>:<span class="num">6</span>])</code></pre></div>
   <p>What does this print?</p>
   <textarea class="ex-input" placeholder="Type your answer here…" aria-label="Your answer"></textarea>
@@ -258,7 +258,7 @@ name = <span class="str">&quot;P&quot;</span> + name[<span class="num">1</span>:
   <p>Ask the user for their first and last name (two separate input() calls) and print a formatted greeting using an f-string, with the name in Title Case.</p>
   <ul><li>Use two input() calls</li><li>Combine both names into one f-string</li><li>Use .title() to fix inconsistent capitalization</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>&quot;ada LOVELACE&quot;.title() becomes &quot;Ada Lovelace&quot;.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68949"><code>first = input(<span class="str">&quot;First name: &quot;</span>)
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-93430"><code>first = input(<span class="str">&quot;First name: &quot;</span>)
 last = input(<span class="str">&quot;Last name: &quot;</span>)
 full = f<span class="str">&quot;{first} {last}&quot;</span>.title()
 <span class="kw">print</span>(f<span class="str">&quot;Welcome, {full}!&quot;</span>)</code></pre></div></div></details>

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>*args and **kwargs | Complete Python Course</title>
 <meta name="description" content="Writing functions that accept any number of arguments.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/args-kwargs/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/args-kwargs/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="*args and **kwargs | Complete Python Course">
 <meta property="og:description" content="Writing functions that accept any number of arguments.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/args-kwargs/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/args-kwargs/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="*args and **kwargs | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "*args and **kwargs", "description": "Writing functions that accept any number of arguments.", "educationalLevel": "Intermediate", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "*args and **kwargs", "item": "https://github.com/engr-rabbi/complete-python-course/args-kwargs/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "*args and **kwargs", "item": "https://engr-rabbi.github.io/complete-python-course/args-kwargs/"}]}</script>
 </head>
 <body data-root="../" data-slug="args-kwargs">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -146,13 +146,13 @@ positional arguments into a tuple; <code>**kwargs</code> collects any number of 
 dictionary. The names <code>args</code> and <code>kwargs</code> are just convention — the asterisks are what
 actually matter.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-63221"><code><span class="kw">def</span> func(a, b, *args, **kwargs):
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62427"><code><span class="kw">def</span> func(a, b, *args, **kwargs):
     <span class="kw">print</span>(a, b)
     <span class="kw">print</span>(args)      <span class="cm"># tuple of extra positional args</span>
     <span class="kw">print</span>(kwargs)     <span class="cm"># dict of extra keyword args</span></code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>*args basics <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">*args basics</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-51395"><code><span class="kw">def</span> total(*numbers):
+  <h3>*args basics <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">*args basics</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-25496"><code><span class="kw">def</span> total(*numbers):
     <span class="kw">return</span> sum(numbers)
 &nbsp;
 <span class="kw">print</span>(total(<span class="num">1</span>, <span class="num">2</span>))
@@ -161,13 +161,13 @@ actually matter.</p>
     return sum(numbers)
 
 print(total(1, 2))
-print(total(1, 2, 3, 4, 5))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>numbers becomes a tuple containing whatever positional arguments were passed — sum() adds them all up regardless of how many there are.</p><h3>*args with normal parameters <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">*args with normal parameters</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79858"><code><span class="kw">def</span> describe(name, *hobbies):
+print(total(1, 2, 3, 4, 5))</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>numbers becomes a tuple containing whatever positional arguments were passed — sum() adds them all up regardless of how many there are.</p><h3>*args with normal parameters <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">*args with normal parameters</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-3621"><code><span class="kw">def</span> describe(name, *hobbies):
     <span class="kw">print</span>(f<span class="str">&quot;{name} enjoys: {&#x27;, &#x27;.join(hobbies)}&quot;</span>)
 &nbsp;
 describe(<span class="str">&quot;Ada&quot;</span>, <span class="str">&quot;chess&quot;</span>, <span class="str">&quot;coding&quot;</span>, <span class="str">&quot;reading&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>Ada enjoys: chess, coding, reading</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">def describe(name, *hobbies):
     print(f&quot;{name} enjoys: {&#x27;, &#x27;.join(hobbies)}&quot;)
 
-describe(&quot;Ada&quot;, &quot;chess&quot;, &quot;coding&quot;, &quot;reading&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>name grabs the first argument as usual; every remaining positional argument flows into the hobbies tuple.</p><h3>**kwargs basics <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">**kwargs basics</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-46837"><code><span class="kw">def</span> build_profile(**details):
+describe(&quot;Ada&quot;, &quot;chess&quot;, &quot;coding&quot;, &quot;reading&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>name grabs the first argument as usual; every remaining positional argument flows into the hobbies tuple.</p><h3>**kwargs basics <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">**kwargs basics</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-83109"><code><span class="kw">def</span> build_profile(**details):
     <span class="kw">for</span> key, value <span class="kw">in</span> details.items():
         <span class="kw">print</span>(f<span class="str">&quot;{key}: {value}&quot;</span>)
 &nbsp;
@@ -177,7 +177,7 @@ city: London</div><div data-runner class="runner"><textarea class="run-editor" s
     for key, value in details.items():
         print(f&quot;{key}: {value}&quot;)
 
-build_profile(name=&quot;Ada&quot;, role=&quot;Engineer&quot;, city=&quot;London&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>details becomes a dictionary of every keyword argument passed in, letting the caller supply any named fields they like.</p><h3>Using both together <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Using both together</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-20813"><code><span class="kw">def</span> order(item, *extras, **notes):
+build_profile(name=&quot;Ada&quot;, role=&quot;Engineer&quot;, city=&quot;London&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>details becomes a dictionary of every keyword argument passed in, letting the caller supply any named fields they like.</p><h3>Using both together <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Using both together</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-69723"><code><span class="kw">def</span> order(item, *extras, **notes):
     <span class="kw">print</span>(<span class="str">&quot;Item:&quot;</span>, item)
     <span class="kw">print</span>(<span class="str">&quot;Extras:&quot;</span>, extras)
     <span class="kw">print</span>(<span class="str">&quot;Notes:&quot;</span>, notes)
@@ -208,12 +208,12 @@ order(&quot;Burger&quot;, &quot;cheese&quot;, &quot;bacon&quot;, spicy=True, del
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError: invalid syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-67477"><code><span class="kw">def</span> func(**kwargs, *args):
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises SyntaxError: invalid syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-91323"><code><span class="kw">def</span> func(**kwargs, *args):
     <span class="kw">pass</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-68572"><code><span class="kw">def</span> func(*args, **kwargs):
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-77386"><code><span class="kw">def</span> func(*args, **kwargs):
     <span class="kw">pass</span></code></pre></div>
     </div>
   </div>
@@ -225,7 +225,7 @@ order(&quot;Burger&quot;, &quot;cheese&quot;, &quot;bacon&quot;, spicy=True, del
   
 <div class="exercise-box" data-answer="4" data-explain="Four positional arguments were passed, so args is a 4-item tuple, and len(args) is 4.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-41988"><code><span class="kw">def</span> show(*args):
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79306"><code><span class="kw">def</span> show(*args):
     <span class="kw">print</span>(len(args))
 &nbsp;
 show(<span class="num">1</span>, <span class="num">2</span>, <span class="num">3</span>, <span class="num">4</span>)</code></pre></div>
@@ -246,7 +246,7 @@ show(<span class="num">1</span>, <span class="num">2</span>, <span class="num">3
   <p>Write a function make_pizza(size, *toppings) that prints the pizza size and a comma-separated list of toppings, then call it with a size and at least 3 toppings.</p>
   <ul><li>size should be a required, named parameter</li><li>toppings should collect any number of extra arguments</li><li>Print a friendly summary sentence</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>&#x27;, &#x27;.join(toppings) turns the tuple into a readable string.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-70046"><code><span class="kw">def</span> make_pizza(size, *toppings):
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-36904"><code><span class="kw">def</span> make_pizza(size, *toppings):
     <span class="kw">print</span>(f<span class="str">&quot;Making a {size}-inch pizza with: {&#x27;, &#x27;.join(toppings)}&quot;</span>)
 &nbsp;
 make_pizza(<span class="num">12</span>, <span class="str">&quot;cheese&quot;</span>, <span class="str">&quot;mushroom&quot;</span>, <span class="str">&quot;olives&quot;</span>)</code></pre></div></div></details>

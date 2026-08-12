@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tuples | Complete Python Course</title>
 <meta name="description" content="An ordered collection that, once created, can never be changed.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/tuples/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/tuples/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tuples | Complete Python Course">
 <meta property="og:description" content="An ordered collection that, once created, can never be changed.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/tuples/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/tuples/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tuples | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Tuples", "description": "An ordered collection that, once created, can never be changed.", "educationalLevel": "Beginner", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Tuples", "item": "https://github.com/engr-rabbi/complete-python-course/tuples/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Tuples", "item": "https://engr-rabbi.github.io/complete-python-course/tuples/"}]}</script>
 </head>
 <body data-root="../" data-slug="tuples">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -147,14 +147,14 @@ No append, no item assignment, no remove.</p>
 lets Python optimize storage slightly, and — most usefully — is exactly what functions use under the hood
 whenever they return more than one value.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-98397"><code>point = (<span class="num">3</span>, <span class="num">4</span>)
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-5232"><code>point = (<span class="num">3</span>, <span class="num">4</span>)
 x, y = point   <span class="cm"># unpacking</span>
 point[<span class="num">0</span>]       <span class="cm"># 3</span></code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Creating and indexing a tuple <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Creating and indexing a tuple</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-85593"><code>point = (<span class="num">3</span>, <span class="num">4</span>)
+  <h3>Creating and indexing a tuple <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Creating and indexing a tuple</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-14957"><code>point = (<span class="num">3</span>, <span class="num">4</span>)
 <span class="kw">print</span>(point[<span class="num">0</span>], point[<span class="num">1</span>])</code></pre><div class="cb-output"><span class="out-label">Output</span>3 4</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">point = (3, 4)
-print(point[0], point[1])</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Tuples use the same indexing rules as lists — parentheses instead of square brackets is the only visual difference.</p><h3>Tuples are immutable <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Tuples are immutable</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-23029"><code>colors = (<span class="str">&quot;red&quot;</span>, <span class="str">&quot;green&quot;</span>)
+print(point[0], point[1])</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Tuples use the same indexing rules as lists — parentheses instead of square brackets is the only visual difference.</p><h3>Tuples are immutable <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Tuples are immutable</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-82841"><code>colors = (<span class="str">&quot;red&quot;</span>, <span class="str">&quot;green&quot;</span>)
 <span class="kw">try</span>:
     colors[<span class="num">0</span>] = <span class="str">&quot;blue&quot;</span>
 <span class="kw">except</span> TypeError <span class="kw">as</span> e:
@@ -162,7 +162,7 @@ print(point[0], point[1])</textarea><div class="tracer-controls"><button class="
 try:
     colors[0] = &quot;blue&quot;
 except TypeError as e:
-    print(&quot;Can&#x27;t do that:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Attempting to change an item raises TypeError — this is what 'immutable' means in practice.</p><h3>Returning multiple values <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Returning multiple values</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-72567"><code><span class="kw">def</span> min_max(numbers):
+    print(&quot;Can&#x27;t do that:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Attempting to change an item raises TypeError — this is what 'immutable' means in practice.</p><h3>Returning multiple values <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Returning multiple values</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-23870"><code><span class="kw">def</span> min_max(numbers):
     <span class="kw">return</span> min(numbers), max(numbers)
 &nbsp;
 lowest, highest = min_max([<span class="num">4</span>, <span class="num">9</span>, <span class="num">1</span>, <span class="num">7</span>])
@@ -189,12 +189,12 @@ print(lowest, highest)</textarea><div class="tracer-controls"><button class="btn
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints &lt;class &#x27;int&#x27;&gt;, not a tuple — a silent bug, not a crash</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-77229"><code>single = (<span class="num">5</span>)
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises prints &lt;class &#x27;int&#x27;&gt;, not a tuple — a silent bug, not a crash</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-96305"><code>single = (<span class="num">5</span>)
 <span class="kw">print</span>(type(single))</code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-51561"><code>single = (<span class="num">5</span>,)
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-29150"><code>single = (<span class="num">5</span>,)
 <span class="kw">print</span>(type(single))</code></pre></div>
     </div>
   </div>
@@ -206,7 +206,7 @@ print(lowest, highest)</textarea><div class="tracer-controls"><button class="btn
   
 <div class="exercise-box" data-answer="1920x1080" data-explain="width becomes 1920 and height becomes 1080, matching the tuple&#x27;s order.">
   <p><strong>Exercise 1 — Predict the output</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-38491"><code>dimensions = (<span class="num">1920</span>, <span class="num">1080</span>)
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-37527"><code>dimensions = (<span class="num">1920</span>, <span class="num">1080</span>)
 width, height = dimensions
 <span class="kw">print</span>(f<span class="str">&quot;{width}x{height}&quot;</span>)</code></pre></div>
   <p>What does this print?</p>
@@ -226,7 +226,7 @@ width, height = dimensions
   <p>Write a function circle_stats(radius) that returns a tuple of (circumference, area), then unpack and print both, rounded to 2 decimal places.</p>
   <ul><li>Use pi = 3.14159</li><li>Return both values as a tuple</li><li>Unpack the result into two named variables</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>circumference = 2 * pi * radius, area = pi * radius ** 2</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-26935"><code><span class="kw">def</span> circle_stats(radius):
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-19627"><code><span class="kw">def</span> circle_stats(radius):
     pi = <span class="num">3.14159</span>
     <span class="kw">return</span> <span class="num">2</span> * pi * radius, pi * radius ** <span class="num">2</span>
 &nbsp;

@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Error &amp; Exception Handling | Complete Python Course</title>
 <meta name="description" content="Anticipating what can go wrong, and failing gracefully instead of crashing.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/exceptions/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/exceptions/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Error &amp; Exception Handling | Complete Python Course">
 <meta property="og:description" content="Anticipating what can go wrong, and failing gracefully instead of crashing.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/exceptions/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/exceptions/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Error &amp; Exception Handling | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Error & Exception Handling", "description": "Anticipating what can go wrong, and failing gracefully instead of crashing.", "educationalLevel": "Intermediate", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Error & Exception Handling", "item": "https://github.com/engr-rabbi/complete-python-course/exceptions/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Error & Exception Handling", "item": "https://engr-rabbi.github.io/complete-python-course/exceptions/"}]}</script>
 </head>
 <body data-root="../" data-slug="exceptions">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -145,7 +145,7 @@ continue." Without handling, an exception crashes your whole program. <code>try<
 you anticipate specific failures — bad user input, a missing file, a network timeout — and respond sensibly
 instead of crashing.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-60190"><code><span class="kw">try</span>:
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-38469"><code><span class="kw">try</span>:
     risky_code()
 <span class="kw">except</span> SomeError <span class="kw">as</span> e:
     handle_it(e)
@@ -155,19 +155,19 @@ instead of crashing.</p>
     always_runs()</code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Basic try/except <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Basic try/except</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16733"><code><span class="kw">try</span>:
+  <h3>Basic try/except <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Basic try/except</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-79576"><code><span class="kw">try</span>:
     age = int(<span class="str">&quot;not a number&quot;</span>)
 <span class="kw">except</span> ValueError:
     <span class="kw">print</span>(<span class="str">&quot;That wasn&#x27;t a valid number.&quot;</span>)</code></pre><div class="cb-output"><span class="out-label">Output</span>That wasn&#x27;t a valid number.</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">try:
     age = int(&quot;not a number&quot;)
 except ValueError:
-    print(&quot;That wasn&#x27;t a valid number.&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Instead of crashing, the program catches the ValueError and responds with a helpful message.</p><h3>Catching the error object <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Catching the error object</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-42710"><code><span class="kw">try</span>:
+    print(&quot;That wasn&#x27;t a valid number.&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Instead of crashing, the program catches the ValueError and responds with a helpful message.</p><h3>Catching the error object <span class="badge easy" style="margin-left:.4rem;">Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Catching the error object</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-55157"><code><span class="kw">try</span>:
     result = <span class="num">10</span> / <span class="num">0</span>
 <span class="kw">except</span> ZeroDivisionError <span class="kw">as</span> e:
     <span class="kw">print</span>(<span class="str">&quot;Error:&quot;</span>, e)</code></pre><div class="cb-output"><span class="out-label">Output</span>Error: division by zero</div><div data-runner class="runner"><textarea class="run-editor" spellcheck="false" aria-label="Editable Python code">try:
     result = 10 / 0
 except ZeroDivisionError as e:
-    print(&quot;Error:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>as e captures the exception object itself, letting you inspect or log its message.</p><h3>else and finally <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">else and finally</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-30623"><code><span class="kw">try</span>:
+    print(&quot;Error:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>as e captures the exception object itself, letting you inspect or log its message.</p><h3>else and finally <span class="badge intermediate" style="margin-left:.4rem;">Intermediate</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">else and finally</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-75132"><code><span class="kw">try</span>:
     number = int(<span class="str">&quot;42&quot;</span>)
 <span class="kw">except</span> ValueError:
     <span class="kw">print</span>(<span class="str">&quot;Invalid input&quot;</span>)
@@ -182,7 +182,7 @@ except ValueError:
 else:
     print(&quot;Conversion succeeded:&quot;, number)
 finally:
-    print(&quot;Done attempting conversion.&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>else runs only if no exception occurred; finally always runs, whether or not there was an error — useful for cleanup.</p><h3>Raising your own exception <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Raising your own exception</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-33135"><code><span class="kw">def</span> withdraw(balance, amount):
+    print(&quot;Done attempting conversion.&quot;)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>else runs only if no exception occurred; finally always runs, whether or not there was an error — useful for cleanup.</p><h3>Raising your own exception <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Raising your own exception</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-34276"><code><span class="kw">def</span> withdraw(balance, amount):
     <span class="kw">if</span> amount &gt; balance:
         <span class="kw">raise</span> ValueError(<span class="str">&quot;Insufficient funds&quot;</span>)
     <span class="kw">return</span> balance - amount
@@ -198,7 +198,7 @@ finally:
 try:
     withdraw(50, 100)
 except ValueError as e:
-    print(&quot;Transaction failed:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>raise lets your own code trigger an exception deliberately, with a message explaining what went wrong.</p><h3>Custom exception classes <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Custom exception classes</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-86967"><code><span class="kw">class</span> InsufficientFundsError(Exception):
+    print(&quot;Transaction failed:&quot;, e)</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>raise lets your own code trigger an exception deliberately, with a message explaining what went wrong.</p><h3>Custom exception classes <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Custom exception classes</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16114"><code><span class="kw">class</span> InsufficientFundsError(Exception):
     <span class="kw">pass</span>
 &nbsp;
 <span class="kw">def</span> withdraw(balance, amount):
@@ -239,14 +239,14 @@ except InsufficientFundsError as e:
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but real bugs go silently unnoticed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-45267"><code><span class="kw">try</span>:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a crash, but real bugs go silently unnoticed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-43558"><code><span class="kw">try</span>:
     do_something()
 <span class="kw">except</span>:
     <span class="kw">pass</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-25887"><code><span class="kw">try</span>:
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-9419"><code><span class="kw">try</span>:
     do_something()
 <span class="kw">except</span> ValueError <span class="kw">as</span> e:
     <span class="kw">print</span>(<span class="str">&quot;Invalid value:&quot;</span>, e)</code></pre></div>
@@ -260,7 +260,7 @@ except InsufficientFundsError as e:
   
 <div class="exercise-box" data-answer="ZeroDivisionError" data-explain="10 / 0 raises ZeroDivisionError, not ValueError — the except clause needs to match.">
   <p><strong>Exercise 1 — Debug this code</strong></p>
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-45359"><code><span class="kw">try</span>:
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Given this code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-54549"><code><span class="kw">try</span>:
     <span class="kw">print</span>(<span class="num">10</span> / <span class="num">0</span>)
 <span class="kw">except</span> ValueError:
     <span class="kw">print</span>(<span class="str">&quot;Cannot divide&quot;</span>)</code></pre></div>
@@ -281,7 +281,7 @@ except InsufficientFundsError as e:
   <p>Write a function safe_divide(a, b) that returns the division result, or prints a friendly message and returns None if b is zero.</p>
   <ul><li>Use try/except ZeroDivisionError</li><li>Return the computed value on success</li><li>Return None and print a message on failure</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>return None explicitly makes the failure case clear.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-7556"><code><span class="kw">def</span> safe_divide(a, b):
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2349"><code><span class="kw">def</span> safe_divide(a, b):
     <span class="kw">try</span>:
         <span class="kw">return</span> a / b
     <span class="kw">except</span> ZeroDivisionError:

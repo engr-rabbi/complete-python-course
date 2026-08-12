@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Python Projects | Complete Python Course</title>
 <meta name="description" content="Putting everything together — from a number-guessing game to a full CRUD application.">
-<link rel="canonical" href="https://github.com/engr-rabbi/complete-python-course/projects/">
+<link rel="canonical" href="https://engr-rabbi.github.io/complete-python-course/projects/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Python Projects | Complete Python Course">
 <meta property="og:description" content="Putting everything together — from a number-guessing game to a full CRUD application.">
-<meta property="og:url" content="https://github.com/engr-rabbi/complete-python-course/projects/">
+<meta property="og:url" content="https://engr-rabbi.github.io/complete-python-course/projects/">
 <meta property="og:site_name" content="Complete Python Course">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Python Projects | Complete Python Course">
@@ -18,7 +18,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23B65C38'/%3E%3Ctext x='50' y='68' font-size='55' font-family='monospace' fill='white' text-anchor='middle'%3EPy%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="../assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "Python Projects", "description": "Putting everything together \u2014 from a number-guessing game to a full CRUD application.", "educationalLevel": "Intermediate", "learningResourceType": "Lesson", "isPartOf": {"@type": "Course", "name": "Complete Python Course"}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://github.com/engr-rabbi/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://github.com/engr-rabbi/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Python Projects", "item": "https://github.com/engr-rabbi/complete-python-course/projects/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engr-rabbi.github.io/complete-python-course/"}, {"@type": "ListItem", "position": 2, "name": "Course", "item": "https://engr-rabbi.github.io/complete-python-course/roadmap/"}, {"@type": "ListItem", "position": 3, "name": "Python Projects", "item": "https://engr-rabbi.github.io/complete-python-course/projects/"}]}</script>
 </head>
 <body data-root="../" data-slug="projects">
 <script>window.PY_TOTAL_LESSONS = 20;</script>
@@ -145,14 +145,14 @@ turn into ability. This module walks through one complete project in detail, the
 href="../projects/">Project Dashboard</a>, which lists beginner, intermediate, and advanced projects along with
 a large capstone that combines nearly everything in this course.</p>
 
-  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-16552"><code><span class="cm"># A good project always starts with a plain-language plan:</span>
+  <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Syntax</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-27826"><code><span class="cm"># A good project always starts with a plain-language plan:</span>
 <span class="cm"># 1. What does it do?</span>
 <span class="cm"># 2. What information does it need?</span>
 <span class="cm"># 3. What are the steps, in order?</span>
 <span class="cm"># 4. What could go wrong, and how should it be handled?</span></code></pre></div>
 
   <h2 id="examples">Examples</h2>
-  <h3>Walkthrough: Number Guessing Game — plan <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Walkthrough: Number Guessing Game — plan</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-74192"><code><span class="cm"># Objective: the computer picks a secret number 1-100; the player guesses</span>
+  <h3>Walkthrough: Number Guessing Game — plan <span class="badge veryeasy" style="margin-left:.4rem;">Very Easy</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Walkthrough: Number Guessing Game — plan</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-26711"><code><span class="cm"># Objective: the computer picks a secret number 1-100; the player guesses</span>
 <span class="cm"># until they get it right, with &quot;higher/lower&quot; hints after each guess.</span>
 <span class="cm">#</span>
 <span class="cm"># Requirements:</span>
@@ -166,7 +166,7 @@ a large capstone that combines nearly everything in this course.</p>
 # - Generate a random number
 # - Accept repeated guesses
 # - Give feedback after each guess
-# - Count and report the number of attempts</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Writing the plan in plain English before writing code is a habit worth building early — it turns a vague idea into a concrete checklist.</p><h3>Walkthrough: Number Guessing Game — full code <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Walkthrough: Number Guessing Game — full code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-62355"><code><span class="kw">import</span> random
+# - Count and report the number of attempts</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>Writing the plan in plain English before writing code is a habit worth building early — it turns a vague idea into a concrete checklist.</p><h3>Walkthrough: Number Guessing Game — full code <span class="badge realworld" style="margin-left:.4rem;">Real World</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Walkthrough: Number Guessing Game — full code</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-25534"><code><span class="kw">import</span> random
 &nbsp;
 secret = random.randint(<span class="num">1</span>, <span class="num">100</span>)
 attempts = <span class="num">0</span>
@@ -199,7 +199,7 @@ while True:
         print(&quot;Lower!&quot;)
     else:
         print(f&quot;Correct! It took you {attempts} attempts.&quot;)
-        break</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>This combines a while loop, if/elif/else, input()/int(), and the random module — every one of them covered earlier in this course.</p><h3>Extending the project <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Extending the project</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-42832"><code><span class="cm"># Ideas to extend the game further, using concepts from this course:</span>
+        break</textarea><div class="tracer-controls"><button class="btn btn-primary btn-sm run-btn" type="button">▶ Run in browser</button><button class="btn btn-ghost btn-sm run-reset" type="button">Reset</button></div><div class="run-output" role="status" aria-live="polite"></div></div></div><p>This combines a while loop, if/elif/else, input()/int(), and the random module — every one of them covered earlier in this course.</p><h3>Extending the project <span class="badge challenge" style="margin-left:.4rem;">Challenge</span></h3><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Extending the project</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-3671"><code><span class="cm"># Ideas to extend the game further, using concepts from this course:</span>
 <span class="cm"># - Limit the player to 7 attempts (control flow)</span>
 <span class="cm"># - Track high scores across games in a list (lists)</span>
 <span class="cm"># - Save scores to a file between runs (file I/O)</span>
@@ -228,12 +228,12 @@ while True:
   <div class="mistake-pair">
     <div class="mp-bad">
       <div class="mp-label">✗ Avoid this</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a specific error — but debugging becomes very difficult</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-26137"><code><span class="cm"># Writing the entire guessing game, GUI, file-saving, and</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">This raises not a specific error — but debugging becomes very difficult</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-63508"><code><span class="cm"># Writing the entire guessing game, GUI, file-saving, and</span>
 <span class="cm"># high-score tracking all at once, then running it for the first time.</span></code></pre></div>
     </div>
     <div class="mp-good">
       <div class="mp-label">✓ Better approach</div>
-      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-30483"><code><span class="cm"># Get the core loop working and tested first.</span>
+      <div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Fixed</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-91687"><code><span class="cm"># Get the core loop working and tested first.</span>
 <span class="cm"># Then add ONE feature, test again, then add the next.</span></code></pre></div>
     </div>
   </div>
@@ -263,7 +263,7 @@ while True:
   <p>Pick one extension idea from the examples above (attempt limit, high-score list, or file saving) and implement it on top of the base guessing game.</p>
   <ul><li>Start from the working base game</li><li>Add exactly one new feature</li><li>Test that the base game still works after your change</li></ul>
   <details class="disclosure"><summary>💡 Need a hint?</summary><div class="disclosure-body"><p>An attempt limit just needs an if attempts &gt;= 7: break check inside the loop.</p></div></details>
-  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-7706"><code><span class="kw">import</span> random
+  <details class="disclosure"><summary>🔍 Show a sample solution</summary><div class="disclosure-body"><div class="codeblock"><div class="cb-head"><span class="cb-dots"><span></span><span></span><span></span></span><span class="cb-title">Python</span><button class="cb-btn cb-copy" type="button">Copy</button></div><pre id="code-2557"><code><span class="kw">import</span> random
 &nbsp;
 secret = random.randint(<span class="num">1</span>, <span class="num">100</span>)
 attempts = <span class="num">0</span>
